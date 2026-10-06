@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>De Leon Barbershop | Fades, beard trims &amp; shaves in the Mission, SF</title>
+  <title>De Leon Barbershop | Hair cuts &amp; shaves in the Mission, SF</title>
   <meta name="description" content="Neighborhood barbershop at 2138 Mission St, San Francisco. Men's haircuts, fades, beard trims and head shaves. Rated 5.0 on Google. Call (415) 368-2421 to book your chair.">
-  <meta name="theme-color" content="#C0322B">
+  <meta name="theme-color" content="#141416">
   <meta name="color-scheme" content="light dark">
   <meta name="robots" content="index, follow">
 
@@ -13,25 +13,25 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta property="og:site_name" content="De Leon Barbershop">
-  <meta property="og:title" content="De Leon Barbershop | Your best fade in the Mission">
+  <meta property="og:title" content="De Leon Barbershop | Hair cuts &amp; shaves on Mission St">
   <meta property="og:description" content="Men's haircuts, fades, beard trims and head shaves on Mission St, San Francisco. Call to book your chair.">
-  <!-- TODO: publish a 1200x630 image and fill og:image / twitter:image with its absolute URL -->
+  <!-- TODO: publish a 1200x630 image (storefront photo works well) and fill og:image / twitter:image with its absolute URL -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="De Leon Barbershop | Your best fade in the Mission">
+  <meta name="twitter:title" content="De Leon Barbershop | Hair cuts &amp; shaves on Mission St">
   <meta name="twitter:description" content="Men's haircuts, fades, beard trims and head shaves on Mission St, San Francisco.">
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231C2233'/%3E%3Crect x='11' y='5' width='10' height='22' rx='5' fill='%23F4ECDC'/%3E%3Cpath d='M11 13l10-6v5l-10 6zM11 23l10-6v5l-10 6z' fill='%23C0322B'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23141416'/%3E%3Crect x='11' y='5' width='10' height='22' rx='2' fill='%23fff'/%3E%3Cpath d='M11 12l10-6v4l-10 6zM11 21l10-6v4l-10 6z' fill='%23D02B24'/%3E%3Cpath d='M11 16.5l10-6v1.6l-10 6z' fill='%23141416'/%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HairSalon",
     "name": "De Leon Barbershop",
-    "description": "Neighborhood barbershop: men's haircuts, fades, beard trims and head shaves.",
+    "description": "Neighborhood barbershop: hair cuts and shaves, fades, beard trims and head shaves.",
     "telephone": "+1 415-368-2421",
     "address": {
       "@type": "PostalAddress",
@@ -48,42 +48,43 @@
 
   <style>
     /* =========================================================
-       TOKENS
+       TOKENS — taken from the storefront: black facade,
+       white plaster wall, red trim
        ========================================================= */
     :root {
       color-scheme: light dark;
 
       /* Brand */
-      --red: oklch(0.53 0.19 27);               /* #C0322B — barber pole red */
-      --red-soft: oklch(0.91 0.045 32);
-      --red-deep: oklch(0.44 0.17 27);
-      --red-light: oklch(0.73 0.14 26);
-      --cream: oklch(0.96 0.02 85);
-      --navy: oklch(0.42 0.12 258);              /* pole blue */
-      --ink: oklch(0.2 0.025 260);
-      --ink-deep: oklch(0.14 0.02 260);
-      --steel: oklch(0.8 0.008 250);
-      --white: oklch(0.99 0.003 90);
+      --black: oklch(0.17 0.004 260);           /* #141416 — facade */
+      --black-deep: oklch(0.11 0.003 260);
+      --wall: oklch(0.97 0.004 95);             /* plaster wall */
+      --wall-2: oklch(0.92 0.006 95);
+      --red: oklch(0.56 0.21 27);               /* #D02B24 — trim red */
+      --red-deep: oklch(0.47 0.19 27);
+      --red-light: oklch(0.7 0.17 25);
+      --white: oklch(0.995 0 0);
 
       /* Light theme */
-      --bg: oklch(0.975 0.01 85);
-      --surface: oklch(0.995 0.005 85);
-      --surface-2: oklch(0.94 0.012 85);
-      --text: var(--ink);
-      --muted: oklch(0.45 0.015 260);
-      --line: oklch(0.2 0.025 260 / 0.12);
+      --bg: var(--wall);
+      --surface: var(--white);
+      --surface-2: var(--wall-2);
+      --text: var(--black);
+      --muted: oklch(0.42 0.005 260);
+      --line: oklch(0.17 0.004 260 / 0.14);
       --accent-text: var(--red-deep);
-      --focus: var(--navy);
-      --shadow: 0 1px 2px oklch(0.2 0.02 260 / 0.08), 0 14px 34px -14px oklch(0.2 0.02 260 / 0.28);
-      --shadow-lg: 0 2px 4px oklch(0.2 0.02 260 / 0.08), 0 30px 60px -24px oklch(0.2 0.02 260 / 0.4);
+      --focus: var(--red-deep);
+      --num-shadow: var(--black);
+      --shadow: 0 1px 2px oklch(0 0 0 / 0.08), 0 14px 34px -14px oklch(0 0 0 / 0.3);
+      --shadow-lg: 0 2px 4px oklch(0 0 0 / 0.08), 0 30px 60px -24px oklch(0 0 0 / 0.45);
 
       /* Type */
-      --font-display: "Archivo", "Arial Black", system-ui, sans-serif;
+      --font-display: "Alfa Slab One", "Rockwell", "Roboto Slab", Georgia, serif;
+      --font-sign: "Oswald", "Arial Narrow", system-ui, sans-serif;
       --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
 
       /* Rhythm */
       --gutter: 16px;
-      --radius: 28px;
+      --radius: 18px;
       --header-h: 76px;
       --section: clamp(72px, 10vw, 144px);
       --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -91,23 +92,22 @@
 
       /* Textures */
       --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
-      --chrome:
-        repeating-linear-gradient(90deg, oklch(1 0 0 / .06) 0 1px, transparent 1px 3px),
-        linear-gradient(135deg, oklch(0.92 0.005 250), oklch(0.72 0.01 250) 38%, oklch(0.96 0.004 250) 52%, oklch(0.7 0.012 250) 78%, oklch(0.86 0.006 250));
+      --plaster: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .25 0 0 0 0 .25 0 0 0 0 .25 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23c)'/%3E%3C/svg%3E");
     }
 
     @media (min-width: 640px) { :root { --gutter: 24px; } }
 
     @media (prefers-color-scheme: dark) {
       :root {
-        --bg: oklch(0.17 0.015 260);
-        --surface: oklch(0.215 0.016 260);
-        --surface-2: oklch(0.25 0.018 260);
-        --text: oklch(0.95 0.01 85);
-        --muted: oklch(0.77 0.012 260);
-        --line: oklch(0.95 0.01 85 / 0.12);
+        --bg: oklch(0.13 0.003 260);
+        --surface: oklch(0.19 0.004 260);
+        --surface-2: oklch(0.23 0.005 260);
+        --text: oklch(0.96 0.004 95);
+        --muted: oklch(0.76 0.005 260);
+        --line: oklch(0.96 0.004 95 / 0.13);
         --accent-text: var(--red-light);
         --focus: var(--red-light);
+        --num-shadow: oklch(0.96 0.004 95);
         --shadow: 0 1px 2px oklch(0 0 0 / 0.3), 0 14px 34px -14px oklch(0 0 0 / 0.6);
         --shadow-lg: 0 2px 4px oklch(0 0 0 / 0.3), 0 30px 60px -24px oklch(0 0 0 / 0.7);
       }
@@ -147,7 +147,7 @@
     ul, ol { margin: 0; padding: 0; list-style: none; }
     address { font-style: normal; }
     button { font: inherit; color: inherit; }
-    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 8px; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
 
     .sr-only {
       position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
@@ -155,8 +155,8 @@
     }
     .skip-link {
       position: fixed; top: 12px; left: 12px; z-index: 300;
-      padding: 12px 18px; border-radius: 999px;
-      background: var(--ink); color: var(--cream); font-weight: 700; text-decoration: none;
+      padding: 12px 18px; border-radius: 6px;
+      background: var(--black); color: var(--white); font-weight: 700; text-decoration: none;
       transform: translateY(-160%); transition: transform .2s var(--ease);
     }
     .skip-link:focus { transform: none; }
@@ -167,31 +167,26 @@
     .i { width: 1.25em; height: 1.25em; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
     .i--fill { fill: currentColor; stroke: none; }
 
-    /* Type */
-    .display, .h2, .final__title, .hero__title, .tile__title, .step__title, .score__num {
+    /* Type: slab serif like the "BARBERSHOP" sign, condensed caps like "HAIR CUTS & SHAVES" */
+    .h2, .final__title, .hero__title, .tile__title, .step__title, .score__num, .stat dd {
       font-family: var(--font-display);
-      font-stretch: 112%;
-      font-variation-settings: "wdth" 112;
+      font-weight: 400;
     }
     .h2 {
-      font-size: clamp(2.1rem, 1.3rem + 3.4vw, 4rem);
-      font-weight: 850;
-      line-height: 0.98;
-      letter-spacing: -0.03em;
+      font-size: clamp(2rem, 1.3rem + 3vw, 3.6rem);
+      line-height: 1.02;
+      letter-spacing: -0.01em;
       text-wrap: balance;
     }
     .lead { font-size: clamp(1.075rem, 1rem + 0.35vw, 1.25rem); color: var(--muted); max-width: 38ch; text-wrap: pretty; }
     .eyebrow {
-      display: inline-flex; align-items: center; gap: 10px;
+      display: inline-flex; align-items: center; gap: 12px;
       margin-bottom: 18px;
-      font: 700 0.8rem/1 var(--font-body);
+      font: 600 0.95rem/1 var(--font-sign);
       letter-spacing: 0.16em; text-transform: uppercase;
       color: var(--accent-text);
     }
-    .eyebrow::before {
-      content: ""; width: 10px; height: 10px; border-radius: 3px;
-      background: currentColor; transform: rotate(45deg);
-    }
+    .eyebrow::before { content: ""; width: 26px; height: 3px; background: currentColor; }
     .section-head { display: grid; gap: 20px; margin-bottom: clamp(40px, 6vw, 72px); }
     @media (min-width: 900px) {
       .section-head { grid-template-columns: 1.2fr 1fr; align-items: end; gap: 48px; }
@@ -210,80 +205,78 @@
        ========================================================= */
     .btn {
       --btn-bg: var(--red);
-      --btn-fg: var(--cream);
-      --btn-edge: var(--ink-deep);
+      --btn-fg: var(--white);
+      --btn-edge: var(--black-deep);
       display: inline-flex; align-items: center; justify-content: center; gap: .6em;
       min-height: 54px; padding: 0 1.5em;
-      border: 2px solid var(--btn-edge); border-radius: 999px;
+      border: 2px solid var(--btn-edge); border-radius: 8px;
       background: var(--btn-bg); color: var(--btn-fg);
-      font: 700 1rem/1.1 var(--font-body);
+      font: 600 1.05rem/1.1 var(--font-sign);
+      letter-spacing: .08em; text-transform: uppercase;
       text-decoration: none; text-align: center;
-      box-shadow: 0 4px 0 var(--btn-edge);
+      box-shadow: 4px 4px 0 var(--btn-edge);
       cursor: pointer;
       transition: transform .18s var(--ease), box-shadow .18s var(--ease), background-color .2s;
       -webkit-tap-highlight-color: transparent;
     }
-    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 0 var(--btn-edge); }
-    .btn:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--btn-edge); }
+    .btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--btn-edge); }
+    .btn:active { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--btn-edge); }
     .btn .i { transition: transform .25s var(--ease); }
     .btn:hover .i-arrow { transform: translateX(4px); }
-    .btn--ink { --btn-bg: var(--ink); --btn-fg: var(--cream); --btn-edge: var(--ink-deep); }
+    .btn--ink { --btn-bg: var(--black); --btn-fg: var(--white); --btn-edge: var(--black-deep); }
+    .btn--on-dark { --btn-edge: var(--white); }
     .btn--ghost {
       --btn-bg: transparent; --btn-fg: currentColor; --btn-edge: currentColor;
       box-shadow: none;
     }
-    .btn--ghost:hover { box-shadow: none; background: oklch(1 0 0 / 0.16); }
+    .btn--ghost:hover { box-shadow: none; transform: none; background: oklch(0.5 0 0 / 0.14); }
     .btn--ghost:active { box-shadow: none; }
-    .btn--lg { min-height: 62px; font-size: 1.075rem; padding-inline: 1.8em; }
-    .btn-row { display: flex; flex-wrap: wrap; gap: 14px; }
+    .btn--lg { min-height: 62px; font-size: 1.15rem; padding-inline: 1.7em; }
+    .btn-row { display: flex; flex-wrap: wrap; gap: 16px; }
 
     /* =========================================================
        HEADER
        ========================================================= */
     .header {
       position: fixed; inset: 0 0 auto; z-index: 100;
-      color: var(--cream);
+      color: var(--white);
       padding-block: 14px;
       transition: background-color .3s var(--ease), box-shadow .3s var(--ease), padding .3s var(--ease), color .3s;
     }
     .header.is-scrolled, .header.menu-open {
-      background: color-mix(in oklch, var(--surface) 90%, transparent);
+      background: color-mix(in oklch, var(--surface) 92%, transparent);
       -webkit-backdrop-filter: blur(12px) saturate(1.3);
       backdrop-filter: blur(12px) saturate(1.3);
-      box-shadow: 0 1px 0 var(--line), 0 12px 30px -20px oklch(0.2 0.02 260 / 0.4);
+      box-shadow: 0 3px 0 var(--red), 0 12px 30px -20px oklch(0 0 0 / 0.4);
       color: var(--text);
       padding-block: 8px;
     }
     .header__inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 48px; }
 
     .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; }
-    .brand__pole { width: 16px; height: 42px; transition: transform .4s var(--ease-spring); }
+    .brand__pole { width: 15px; height: 42px; transition: transform .4s var(--ease-spring); }
     .brand:hover .brand__pole { transform: rotate(-10deg) scale(1.06); }
-    .brand__word { display: grid; gap: 3px; font-family: var(--font-display); line-height: 1; white-space: nowrap; }
-    .brand__word .bold { font-size: 1.2rem; font-weight: 900; letter-spacing: 0.06em; font-stretch: 112%; }
-    .brand__word .thin { font-size: .66rem; font-weight: 400; letter-spacing: 0.38em; }
+    .brand__word { display: grid; gap: 4px; line-height: 1; white-space: nowrap; }
+    .brand__word .bold { font-family: var(--font-display); font-size: 1.3rem; letter-spacing: 0.04em; }
+    .brand__word .thin { font: 600 .68rem/1 var(--font-sign); letter-spacing: 0.42em; }
 
     .nav ul { display: flex; gap: 4px; }
     .nav a {
-      display: block; padding: 10px 14px; border-radius: 999px;
-      font-weight: 600; font-size: .96rem; text-decoration: none;
-      transition: background-color .2s;
+      display: block; padding: 10px 14px; border-radius: 6px;
+      font: 600 1rem/1.2 var(--font-sign); letter-spacing: .1em; text-transform: uppercase; text-decoration: none;
+      transition: background-color .2s, color .2s;
     }
-    .nav a:hover { background: oklch(1 0 0 / 0.14); }
-    .header.is-scrolled .nav a:hover, .header.menu-open .nav a:hover { background: oklch(0.2 0.025 260 / 0.08); }
-    @media (prefers-color-scheme: dark) {
-      .header.is-scrolled .nav a:hover, .header.menu-open .nav a:hover { background: oklch(1 0 0 / 0.08); }
-    }
+    .nav a:hover { color: var(--red-light); }
+    .header.is-scrolled .nav a:hover, .header.menu-open .nav a:hover { color: var(--accent-text); }
 
     .header__actions { display: flex; align-items: center; gap: 10px; }
-    .header__cta { min-height: 46px; padding-inline: 1.1em; font-size: .95rem; }
+    .header__cta { min-height: 46px; padding-inline: 1.1em; font-size: .95rem; box-shadow: 3px 3px 0 var(--btn-edge); }
     .header__cta .label { display: none; }
     @media (min-width: 480px) { .header__cta .label { display: inline; } }
-    .header.is-scrolled .header__cta, .header.menu-open .header__cta { --btn-bg: var(--red); --btn-fg: var(--cream); }
 
     .menu-btn {
       display: inline-grid; place-items: center;
-      width: 48px; height: 48px; border-radius: 50%;
+      width: 48px; height: 48px; border-radius: 8px;
       border: 2px solid currentColor; background: transparent; cursor: pointer;
     }
     .menu-btn span { display: block; width: 18px; height: 2px; background: currentColor; border-radius: 2px; transition: transform .3s var(--ease); grid-area: 1 / 1; }
@@ -296,161 +289,113 @@
       .nav {
         position: absolute; top: calc(100% + 8px); left: var(--gutter); right: var(--gutter);
         display: none;
-        padding: 10px; border-radius: 24px;
+        padding: 10px; border-radius: 12px;
         background: var(--surface); color: var(--text);
-        box-shadow: var(--shadow-lg); border: 1px solid var(--line);
+        box-shadow: var(--shadow-lg); border: 1px solid var(--line); border-top: 4px solid var(--red);
       }
       .nav.is-open { display: block; animation: drop .28s var(--ease); }
       .nav ul { flex-direction: column; }
-      .nav a { padding: 14px 18px; font-size: 1.1rem; border-radius: 14px; }
+      .nav a { padding: 14px 18px; font-size: 1.15rem; }
     }
     @media (min-width: 960px) { .menu-btn { display: none; } }
     @keyframes drop { from { opacity: 0; transform: translateY(-8px); } }
 
     /* =========================================================
-       HERO
+       HERO — the black facade with the folding gate
        ========================================================= */
     .hero {
-      --focus: var(--cream);
+      --focus: var(--white);
       position: relative; isolation: isolate; overflow: clip;
-      background: var(--red); color: var(--cream);
+      background: var(--black); color: var(--white);
       padding: calc(var(--header-h) + clamp(28px, 6vw, 72px)) 0 clamp(120px, 14vw, 190px);
-      clip-path: polygon(0 0, 100% 0, 100% calc(100% - clamp(28px, 5vw, 72px)), 0 100%);
+      border-bottom: 10px solid var(--red);
     }
+    @media (max-width: 959.98px) { .hero { padding-bottom: 150px; } }
     .hero__pattern {
       position: absolute; inset: -60px; z-index: -1;
       width: calc(100% + 120px); height: calc(100% + 120px);
-      color: var(--cream); opacity: .12;
+      color: var(--white); opacity: .07;
       translate: calc(var(--mx, 0) * -30px) calc(var(--my, 0) * -30px);
     }
     .hero__grid { display: grid; gap: clamp(44px, 7vw, 72px); align-items: center; }
     @media (min-width: 960px) { .hero__grid { grid-template-columns: 1.05fr .95fr; } }
-    @media (max-width: 959.98px) { .hero { padding-bottom: 170px; } }
 
     .hero__eyebrow {
-      display: inline-flex; align-items: center; gap: 10px;
-      padding: 8px 14px 8px 10px; margin-bottom: 26px;
-      border-radius: 999px; background: var(--ink); color: var(--cream);
-      font: 700 .8rem/1 var(--font-body); letter-spacing: .12em; text-transform: uppercase;
+      display: inline-flex; align-items: center; gap: 12px;
+      margin-bottom: 26px;
+      font: 600 clamp(1rem, .9rem + .4vw, 1.2rem)/1 var(--font-sign); letter-spacing: .14em; text-transform: uppercase;
     }
-    .hero__eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--red-light); box-shadow: 0 0 0 0 var(--red-light); animation: pulse 2s infinite; }
-    @keyframes pulse { 70% { box-shadow: 0 0 0 8px oklch(0.73 0.14 26 / 0); } 100% { box-shadow: 0 0 0 0 oklch(0.73 0.14 26 / 0); } }
+    .hero__eyebrow .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 0 var(--red); animation: pulse 2s infinite; }
+    @keyframes pulse { 70% { box-shadow: 0 0 0 8px oklch(0.56 0.21 27 / 0); } 100% { box-shadow: 0 0 0 0 oklch(0.56 0.21 27 / 0); } }
 
     .hero__title {
-      font-size: clamp(2.75rem, 1.5rem + 5.6vw, 6.1rem);
-      font-weight: 900;
-      line-height: .92;
-      letter-spacing: -0.035em;
-      margin-bottom: 26px;
+      font-size: clamp(2.7rem, 1.5rem + 5vw, 5.6rem);
+      line-height: .98;
+      letter-spacing: -0.01em;
+      margin-bottom: 28px;
     }
     .hero__title .w { display: inline-block; animation: wordIn .9s var(--ease) calc(.12s + var(--i) * 70ms) both; }
     @keyframes wordIn { from { opacity: 0; transform: translateY(.45em) rotate(5deg); filter: blur(8px); } }
-    .marker {
-      background: linear-gradient(var(--ink), var(--ink)) 0 86% / 0% 40% no-repeat;
-      -webkit-box-decoration-break: clone; box-decoration-break: clone;
-      padding-inline: .04em;
-      animation: mark .8s var(--ease) 1.05s forwards;
-    }
-    @keyframes mark { to { background-size: 100% 40%; } }
+    .marker { color: var(--red-light); }
 
-    .hero__sub { font-size: clamp(1.1rem, 1rem + .45vw, 1.3rem); max-width: 34ch; margin-bottom: 34px; font-weight: 500; animation: fadeUp .8s var(--ease) .55s both; }
+    .hero__sub { font-size: clamp(1.1rem, 1rem + .45vw, 1.3rem); max-width: 34ch; margin-bottom: 36px; color: oklch(0.85 0.004 260); animation: fadeUp .8s var(--ease) .55s both; }
     .hero .btn-row { animation: fadeUp .8s var(--ease) .7s both; }
     .hero__rating { display: flex; align-items: center; gap: 10px; margin-top: 30px; font-weight: 600; font-size: .95rem; animation: fadeUp .8s var(--ease) .85s both; }
-    .hero__rating .stars { display: flex; }
+    .hero__rating .stars { display: flex; color: var(--red-light); }
     .hero__rating .i { width: 18px; height: 18px; }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } }
 
-    /* 3D stage */
+    /* Stage: the white wall above the door, with the shop emblem painted on it */
     .stage { position: relative; width: min(100%, 540px); aspect-ratio: 1; margin-inline: auto; perspective: 1100px; animation: fadeUp 1s var(--ease) .3s both; }
     .stage__inner { position: absolute; inset: 0; transform-style: preserve-3d; transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); }
-    .diamond { position: absolute; width: 64%; aspect-ratio: 1; border-radius: 24%; }
-    .diamond--outline { left: 31%; top: 0%; border: 2px solid var(--cream); transform: translateZ(30px) rotate(45deg); }
-    .diamond--chrome {
-      left: 24%; top: 9%; padding: 5.5%;
-      background: var(--chrome);
-      transform: rotate(45deg);
-      box-shadow: 0 40px 70px -30px oklch(0.2 0.08 27 / .6), inset 0 2px 0 oklch(1 0 0 / .5);
-    }
-    .diamond__core {
-      position: relative; width: 100%; height: 100%;
-      display: grid; place-items: center; overflow: hidden;
-      border-radius: 20%;
-      background: radial-gradient(circle at 50% 50%, oklch(0.3 0.03 260), oklch(0.15 0.02 260) 70%);
-      box-shadow: inset 0 0 0 1px oklch(1 0 0 / .08), inset 0 20px 40px oklch(0 0 0 / .4);
-    }
-    .diamond__core::before {
-      content: ""; position: absolute; inset: -30%;
-      background: radial-gradient(circle at 50% 50%, oklch(0.95 0.03 85 / .7), oklch(0.53 0.19 27 / .4) 24%, transparent 55%);
-      opacity: 0; animation: glowOn 1.8s .9s linear forwards;
-    }
-
-    /* Barber pole */
-    .pole {
-      position: relative; display: flex; flex-direction: column; align-items: center;
-      width: 23%; height: 94%;
-      transform: rotate(-45deg);
-      filter: grayscale(1) brightness(.55);
-      animation: poleOn 1.8s .9s linear forwards;
-    }
-    .pole__ball { width: 64%; aspect-ratio: 1; border-radius: 50%; background: var(--chrome); flex: none; }
-    .pole__cap { width: 118%; height: 7%; border-radius: 6px; background: var(--chrome); flex: none; box-shadow: 0 2px 0 oklch(0 0 0 / .25); }
-    .pole__glass {
-      position: relative; flex: 1; width: 100%; overflow: hidden;
+    .wallpanel {
+      position: absolute; inset: 5%;
+      background: var(--plaster), var(--wall);
+      border-top: 14px solid var(--red); border-right: 14px solid var(--red);
       border-radius: 4px;
-      background: repeating-linear-gradient(-45deg, var(--red) 0 12px, var(--cream) 12px 24px, var(--navy) 24px 36px, var(--cream) 36px 48px);
-      background-size: 100% 67.88px;
-      animation: poleSpin 2.4s linear 2.7s infinite;
+      transform: rotate(-2deg);
+      box-shadow: 0 40px 70px -30px oklch(0 0 0 / .8), inset 0 -40px 60px -40px oklch(0 0 0 / .18);
     }
-    .pole__glass::after {
-      content: ""; position: absolute; inset: 0;
-      background: linear-gradient(90deg, oklch(0 0 0 / .28), oklch(1 0 0 / .55) 28%, oklch(1 0 0 / 0) 46%, oklch(0 0 0 / .32));
-    }
-    .pole__cap--bottom { margin-top: 0; }
-    .pole__base { width: 46%; height: 5%; border-radius: 0 0 8px 8px; background: var(--chrome); flex: none; }
-    @keyframes poleSpin { to { background-position: 0 -67.88px; } }
-    @keyframes glowOn { 0%,12% { opacity: 0 } 14%,20% { opacity: .9 } 22%,34% { opacity: .1 } 36%,40% { opacity: 1 } 42%,50% { opacity: .3 } 54%,100% { opacity: 1 } }
-    @keyframes poleOn { 0%,12% { filter: grayscale(1) brightness(.55) } 14%,20% { filter: none } 22%,34% { filter: grayscale(1) brightness(.55) } 36%,40% { filter: none } 42%,50% { filter: grayscale(.6) brightness(.8) } 54%,100% { filter: drop-shadow(0 0 22px oklch(0.73 0.14 26 / .8)) } }
+    .emblem { position: absolute; inset: 8%; transform: translateZ(50px) rotate(-2deg); }
+    .emblem svg { width: 100%; height: 100%; overflow: visible; }
+    .emblem .e-sign { transform-box: fill-box; transform-origin: center; animation: paintIn .9s var(--ease) .5s both; }
+    .emblem .e-ribbon { transform-box: fill-box; transform-origin: center; animation: ribbonIn .8s var(--ease-spring) 1.1s both; }
+    .emblem .e-stache { transform-box: fill-box; transform-origin: center; animation: stacheIn .7s var(--ease-spring) 1.5s both; }
+    @keyframes paintIn { from { opacity: 0; transform: scale(.92); filter: blur(6px); } }
+    @keyframes ribbonIn { from { opacity: 0; transform: scaleX(.3); } }
+    @keyframes stacheIn { from { opacity: 0; transform: scaleX(0); } }
 
-    .chat {
-      position: absolute; left: -4%; bottom: -3%;
-      width: min(64%, 300px);
-      transform: translateZ(80px) rotate(-4deg);
-      border-radius: 22px; overflow: hidden;
-      background: var(--cream); color: var(--ink);
-      box-shadow: 0 26px 50px -18px oklch(0.2 0.08 27 / .6), 0 0 0 1px oklch(0.2 0.02 260 / .1);
-      font-size: clamp(.68rem, .55rem + .5vw, .82rem); line-height: 1.42;
+    .e-pole {
+      position: absolute; top: 11%; width: 7.5%; height: 48%;
+      display: flex; flex-direction: column; align-items: center;
+      animation: paintIn .9s var(--ease) .7s both;
     }
-    .chat__head { display: flex; align-items: center; gap: 10px; padding: 12px 14px; background: var(--ink); color: var(--cream); }
-    .chat__avatar { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--red); color: var(--cream); flex: none; }
-    .chat__avatar .i { width: 17px; height: 17px; }
-    .chat__head b { display: block; font-size: 1.05em; }
-    .chat__head small { font-size: .85em; opacity: .7; }
-    .chat__body { display: grid; gap: 8px; padding: 12px; }
-    .msg { max-width: 88%; padding: 8px 11px; border-radius: 14px; box-shadow: 0 1px 1px oklch(0 0 0 / .08); animation: pop .5s var(--ease-spring) var(--d) both; }
-    .msg--out { justify-self: end; background: var(--red-soft); border-bottom-right-radius: 4px; }
-    .msg--in { justify-self: start; background: oklch(1 0 0); border-bottom-left-radius: 4px; }
-    .msg time { display: block; text-align: right; font-size: .78em; opacity: .55; margin-top: 2px; }
-    .reply-slot { display: grid; }
-    .reply-slot > * { grid-area: 1 / 1; }
-    .typing { justify-self: start; align-self: start; display: flex; gap: 4px; padding: 11px 13px; border-radius: 14px; background: oklch(1 0 0); animation: pop .3s var(--ease) var(--d) both, vanish .2s linear calc(var(--d) + 1.4s) forwards; }
-    .typing i { width: 6px; height: 6px; border-radius: 50%; background: oklch(0.55 0.01 260); animation: bounce 1s infinite; }
-    .typing i:nth-child(2) { animation-delay: .15s; } .typing i:nth-child(3) { animation-delay: .3s; }
-    @keyframes pop { from { opacity: 0; transform: translateY(10px) scale(.94); } }
-    @keyframes vanish { to { opacity: 0; visibility: hidden; } }
-    @keyframes bounce { 0%, 60%, 100% { transform: translateY(0); } 30% { transform: translateY(-4px); } }
+    .e-pole--l { left: 18.5%; }
+    .e-pole--r { right: 18.5%; }
+    .e-pole__ball { width: 60%; aspect-ratio: 1; border-radius: 50%; background: var(--black); flex: none; }
+    .e-pole__cap { width: 130%; height: 6%; border-radius: 3px; background: var(--black); flex: none; }
+    .e-pole__glass {
+      position: relative; flex: 1; width: 100%; overflow: hidden;
+      border-inline: 3px solid var(--black);
+      background: repeating-linear-gradient(-45deg, var(--red) 0 8px, var(--white) 8px 16px, var(--black) 16px 22px, var(--white) 22px 30px);
+      background-size: 100% 42.43px;
+      animation: poleSpin 2.2s linear 1.8s infinite;
+    }
+    .e-pole__glass::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, oklch(0 0 0 / .18), oklch(1 0 0 / .45) 30%, transparent 50%, oklch(0 0 0 / .2)); }
+    @keyframes poleSpin { to { background-position: 0 -42.43px; } }
 
     .chip {
       position: absolute; display: inline-flex; align-items: center; gap: 8px;
-      padding: 10px 16px; border-radius: 999px;
-      font: 800 clamp(.72rem, .6rem + .4vw, .9rem)/1 var(--font-body);
-      box-shadow: 0 16px 30px -12px oklch(0.2 0.08 27 / .55);
+      padding: 10px 16px; border-radius: 6px;
+      font: 600 clamp(.82rem, .7rem + .4vw, 1rem)/1 var(--font-sign); letter-spacing: .1em; text-transform: uppercase;
+      box-shadow: 0 16px 30px -12px oklch(0 0 0 / .6);
       white-space: nowrap;
     }
     .chip .i { width: 1.1em; height: 1.1em; }
-    .chip--rating { right: 0; top: 0; background: var(--ink); color: var(--cream); transform: translateZ(120px) rotate(6deg); }
-    .chip--rating .i { color: var(--red-light); }
-    .chip--ok { right: 2%; bottom: 6%; background: var(--white); color: var(--ink); transform: translateZ(140px) rotate(-3deg); animation: pop .6s var(--ease-spring) 5.4s both; }
-    .chip--ok .i { color: oklch(0.55 0.15 150); stroke-width: 3; }
+    .chip--rating { right: -2%; top: 1%; background: var(--red); color: var(--white); border: 2px solid var(--black); transform: translateZ(120px) rotate(6deg); animation: pop .6s var(--ease-spring) 2s both; }
+    .chip--sign { left: -3%; bottom: 7%; padding: 14px 18px; background: var(--black); color: var(--white); border: 2px solid var(--white); outline: 3px solid var(--black); font-size: clamp(.95rem, .8rem + .5vw, 1.2rem); transform: translateZ(110px) rotate(-4deg); animation: pop .6s var(--ease-spring) 2.3s both; }
+    @keyframes pop { from { opacity: 0; transform: translateY(10px) scale(.94); } }
+    @media (max-width: 599.98px) { .chip--sign { left: 2%; } .chip--rating { right: 0; } }
 
     /* =========================================================
        SOCIAL PROOF
@@ -461,29 +406,29 @@
       background: var(--line);
       border-radius: var(--radius); overflow: hidden;
       box-shadow: var(--shadow-lg);
-      border: 1px solid var(--line);
+      border: 2px solid var(--black);
     }
     @media (min-width: 720px) { .stats { grid-template-columns: repeat(3, 1fr); } }
-    .stat { display: flex; flex-direction: column-reverse; gap: 6px; padding: clamp(22px, 3vw, 34px); background: var(--surface); }
+    .stat { display: flex; flex-direction: column-reverse; gap: 8px; padding: clamp(22px, 3vw, 34px); background: var(--surface); }
     .stat dt { color: var(--muted); font-weight: 500; }
-    .stat dd { margin: 0; display: flex; align-items: baseline; gap: 10px; font-family: var(--font-display); font-weight: 900; font-size: clamp(2.4rem, 1.6rem + 2.6vw, 3.6rem); line-height: 1; letter-spacing: -0.03em; font-stretch: 112%; }
-    .stat dd small { font-size: .38em; letter-spacing: 0; font-weight: 700; color: var(--accent-text); }
+    .stat dd { margin: 0; display: flex; align-items: baseline; gap: 10px; font-size: clamp(2.4rem, 1.6rem + 2.4vw, 3.4rem); line-height: 1; }
+    .stat dd small { font: 600 .36em/1 var(--font-sign); letter-spacing: .1em; text-transform: uppercase; color: var(--accent-text); }
     .stat .stars { display: flex; color: var(--red); align-self: center; }
     .stat .stars .i { width: 20px; height: 20px; }
 
     .marquee { margin-top: clamp(40px, 6vw, 64px); overflow: hidden; mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent); }
     .marquee__track { display: flex; width: max-content; animation: marquee 40s linear infinite; }
-    .marquee__group { display: flex; align-items: center; gap: 40px; padding-right: 40px; font: 800 clamp(1.1rem, 1rem + .8vw, 1.6rem)/1 var(--font-display); font-stretch: 112%; text-transform: uppercase; letter-spacing: .02em; color: var(--muted); white-space: nowrap; }
-    .marquee__group span::after { content: ""; display: inline-block; width: .42em; height: .42em; margin-left: 40px; border-radius: 3px; background: var(--red); transform: rotate(45deg) translateY(-.1em); }
+    .marquee__group { display: flex; align-items: center; gap: 40px; padding-right: 40px; font: 700 clamp(1.3rem, 1.1rem + .9vw, 1.9rem)/1 var(--font-sign); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); white-space: nowrap; }
+    .marquee__group span::after { content: "✂"; display: inline-block; margin-left: 40px; color: var(--red); font-size: .8em; }
     .marquee:hover .marquee__track { animation-play-state: paused; }
     @keyframes marquee { to { transform: translateX(-50%); } }
 
     /* =========================================================
        PROBLEM -> SOLUTION
        ========================================================= */
-    .problem { background: var(--ink); color: oklch(0.95 0.01 85); margin-top: var(--section); position: relative; }
+    .problem { background: var(--black); color: var(--white); margin-top: var(--section); position: relative; border-top: 10px solid var(--red); }
     .problem .eyebrow { color: var(--red-light); }
-    .problem .lead { color: oklch(0.8 0.012 260); }
+    .problem .lead { color: oklch(0.8 0.005 260); }
     .problem__grid { display: grid; gap: 48px; }
     @media (min-width: 960px) { .problem__grid { grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; } .problem__intro { position: sticky; top: calc(var(--header-h) + 40px); } }
     .problem .h2 { margin-bottom: 22px; }
@@ -492,51 +437,53 @@
     .pains { display: grid; gap: 14px; }
     .pain {
       display: grid; grid-template-columns: auto 1fr; gap: 18px;
-      padding: 24px; border-radius: 22px;
-      background: oklch(1 0 0 / .045); border: 1px solid oklch(1 0 0 / .1);
-      transition: background-color .3s, transform .3s var(--ease);
+      padding: 24px; border-radius: 12px;
+      background: oklch(1 0 0 / .04); border: 1px solid oklch(1 0 0 / .12);
+      transition: background-color .3s, transform .3s var(--ease), border-color .3s;
     }
-    .pain:hover { background: oklch(1 0 0 / .07); transform: translateX(6px); }
-    .pain__x { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 14px; background: oklch(0.62 0.2 28 / .18); color: oklch(0.78 0.14 28); }
-    .pain h3 { font: 700 1.15rem/1.3 var(--font-body); margin-bottom: 6px; }
-    .pain p { color: oklch(0.78 0.012 260); }
+    .pain:hover { background: oklch(1 0 0 / .07); border-color: var(--red); transform: translateX(6px); }
+    .pain__x { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 8px; background: oklch(0.56 0.21 27 / .2); color: var(--red-light); }
+    .pain h3 { font: 600 1.3rem/1.25 var(--font-sign); letter-spacing: .03em; text-transform: uppercase; margin-bottom: 6px; }
+    .pain p { color: oklch(0.78 0.005 260); }
 
     .solution {
       position: relative; overflow: hidden; isolation: isolate;
       display: grid; gap: 28px; align-items: center;
       margin-top: clamp(56px, 8vw, 96px);
       padding: clamp(28px, 5vw, 56px);
-      border-radius: calc(var(--radius) + 8px);
-      background: var(--red); color: var(--cream);
-      --focus: var(--cream);
+      border-radius: var(--radius);
+      background: var(--plaster), var(--wall); color: var(--black);
+      border-top: 10px solid var(--red);
+      --focus: var(--red-deep);
     }
-    .solution::after { /* oversized pole stripes, decorative */
-      content: ""; position: absolute; right: -20px; top: -90px; z-index: -1;
-      width: 150px; height: 440px; border-radius: 999px; opacity: .16;
-      background: repeating-linear-gradient(-45deg, var(--cream) 0 22px, transparent 22px 44px);
-      transform: rotate(18deg);
+    .solution::after { /* faint painted mustache */
+      content: ""; position: absolute; right: -40px; bottom: -30px; z-index: -1;
+      width: 340px; height: 120px; opacity: .07;
+      background: var(--black);
+      -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 50'%3E%3Cpath d='M70 18C62 6 44 4 32 14 24 21 14 22 6 14c0 16 18 26 36 20 12-4 22-10 28-12 6 2 16 8 28 12 18 6 36-4 36-20-8 8-18 7-26 0C96 4 78 6 70 18z'/%3E%3C/svg%3E") center / contain no-repeat;
+              mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 50'%3E%3Cpath d='M70 18C62 6 44 4 32 14 24 21 14 22 6 14c0 16 18 26 36 20 12-4 22-10 28-12 6 2 16 8 28 12 18 6 36-4 36-20-8 8-18 7-26 0C96 4 78 6 70 18z'/%3E%3C/svg%3E") center / contain no-repeat;
     }
     @media (min-width: 900px) { .solution { grid-template-columns: 1fr auto; gap: 48px; } }
-    .solution .eyebrow { color: var(--cream); margin-bottom: 14px; }
-    .solution__text { font: 800 clamp(1.5rem, 1.1rem + 1.6vw, 2.4rem)/1.12 var(--font-display); font-stretch: 108%; letter-spacing: -0.02em; max-width: 26ch; text-wrap: balance; }
-    .solution__text strong { font-weight: 900; background: linear-gradient(var(--ink), var(--ink)) 0 90% / 100% 34% no-repeat; }
+    .solution .eyebrow { color: var(--red-deep); margin-bottom: 14px; }
+    .solution__text { font: 400 clamp(1.5rem, 1.1rem + 1.5vw, 2.3rem)/1.18 var(--font-display); max-width: 26ch; text-wrap: balance; }
+    .solution__text strong { font-weight: 400; color: var(--red-deep); }
 
     /* =========================================================
-       TAPES (intentional grid break)
+       TAPES — painted sign bands (intentional grid break)
        ========================================================= */
     .tapes { position: relative; height: clamp(130px, 16vw, 210px); margin-block: -24px; z-index: 3; pointer-events: none; overflow-x: clip; }
     .tape {
       position: absolute; left: -10vw; top: 50%; width: 120vw;
       padding: 14px 0; overflow: hidden;
-      background: var(--red); color: var(--cream);
-      border-block: 3px solid var(--ink);
+      background: var(--black); color: var(--white);
+      border-block: 4px solid var(--red);
       transform: translateY(-50%) rotate(-3.2deg);
-      box-shadow: 0 16px 30px -18px oklch(0.2 0.02 260 / .6);
+      box-shadow: 0 16px 30px -18px oklch(0 0 0 / .7);
     }
-    .tape--back { background: var(--ink); color: var(--cream); border-color: var(--red); transform: translateY(-50%) rotate(2.6deg); }
+    .tape--back { background: var(--red); color: var(--white); border-color: var(--black); transform: translateY(-50%) rotate(2.6deg); }
     .tape__track { display: flex; width: max-content; animation: marquee 34s linear infinite; }
     .tape--back .tape__track { animation-direction: reverse; animation-duration: 42s; }
-    .tape__group { display: flex; gap: 1.2em; padding-right: 1.2em; font: 900 clamp(1rem, .8rem + 1.2vw, 1.7rem)/1 var(--font-display); font-stretch: 118%; text-transform: uppercase; letter-spacing: .03em; white-space: nowrap; }
+    .tape__group { display: flex; gap: 1em; padding-right: 1em; font: 700 clamp(1.15rem, .9rem + 1.3vw, 2rem)/1 var(--font-sign); text-transform: uppercase; letter-spacing: .08em; white-space: nowrap; }
 
     /* =========================================================
        SERVICES (bento)
@@ -559,58 +506,63 @@
       display: flex; flex-direction: column; gap: 14px;
       padding: clamp(24px, 3vw, 32px);
       border-radius: var(--radius);
-      background: var(--surface); border: 1px solid var(--line);
-      box-shadow: 0 1px 0 var(--line);
-      transition: transform .4s var(--ease), box-shadow .4s var(--ease);
+      background: var(--surface); border: 2px solid var(--line);
+      transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s;
     }
-    .tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-    .tile__title { font-size: clamp(1.9rem, 1.4rem + 1.8vw, 2.8rem); font-weight: 900; line-height: .95; letter-spacing: -0.03em; }
+    .tile:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--text); }
+    .tile__title { font-size: clamp(1.8rem, 1.3rem + 1.6vw, 2.6rem); line-height: 1; }
     .tile p { color: var(--muted); max-width: 42ch; }
-    .tile__tag { align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: var(--surface-2); font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+    .tile__tag { align-self: flex-start; padding: 6px 12px; border-radius: 4px; background: var(--surface-2); font: 600 .85rem/1 var(--font-sign); letter-spacing: .12em; text-transform: uppercase; }
 
     /* Haircuts & fades */
-    .t-cut { background: var(--ink); color: oklch(0.95 0.01 85); border-color: transparent; min-height: 520px; }
-    .t-cut p { color: oklch(0.8 0.012 260); }
-    .t-cut .tile__tag { background: oklch(1 0 0 / .1); }
-    .t-cut::before {
-      content: ""; position: absolute; inset: 0; z-index: -1;
-      background: radial-gradient(circle at 50% 46%, oklch(0.53 0.19 27 / .4), transparent 55%);
+    .t-cut { background: var(--black); color: var(--white); border-color: var(--black); min-height: 540px; }
+    .t-cut:hover { border-color: var(--red); }
+    .t-cut p { color: oklch(0.8 0.005 260); }
+    .t-cut .tile__tag { background: var(--red); }
+    .t-cut::before { /* gate pattern */
+      content: ""; position: absolute; inset: 0; z-index: -1; opacity: .06;
+      background:
+        repeating-linear-gradient(63.4deg, var(--white) 0 2px, transparent 2px 25px),
+        repeating-linear-gradient(-63.4deg, var(--white) 0 2px, transparent 2px 25px);
     }
-    .mirror { position: relative; flex: 1; display: grid; place-items: center; min-height: 280px; }
+    .mirror { position: relative; flex: 1; display: grid; place-items: center; min-height: 290px; }
     .mirror__frame {
-      position: absolute; width: min(86%, 330px); aspect-ratio: 1; border-radius: 50%;
-      background: radial-gradient(circle at 35% 30%, oklch(1 0 0 / .14), oklch(1 0 0 / .03) 60%);
-      box-shadow: inset 0 0 0 6px oklch(0.8 0.008 250 / .5), 0 0 0 1px oklch(1 0 0 / .1);
+      position: relative; width: min(86%, 330px); aspect-ratio: 1; border-radius: 50%; overflow: hidden;
+      display: grid; place-items: end center;
+      background: var(--plaster), var(--wall);
+      border: 10px solid var(--white);
+      box-shadow: 0 0 0 4px var(--red), 0 0 0 7px var(--black), 0 30px 50px -20px oklch(0 0 0 / .8);
     }
-    .head { position: relative; width: min(66%, 250px); height: auto; }
-    .fade-label { font: 800 .9rem/1 var(--font-body); letter-spacing: .12em; text-transform: uppercase; color: var(--red-light); }
+    .head { width: 74%; height: auto; }
+    .fade-label { font: 700 1.05rem/1 var(--font-sign); letter-spacing: .14em; text-transform: uppercase; color: var(--red-light); }
     .fades { display: flex; flex-wrap: wrap; gap: 8px; }
     .fade-btn {
-      min-height: 46px; padding: 0 20px; border-radius: 999px;
-      border: 1.5px solid oklch(1 0 0 / .2); background: oklch(1 0 0 / .06);
-      font-weight: 700; cursor: pointer;
+      min-height: 46px; padding: 0 22px; border-radius: 6px;
+      border: 2px solid oklch(1 0 0 / .3); background: transparent;
+      font: 600 1rem/1 var(--font-sign); letter-spacing: .12em; text-transform: uppercase; cursor: pointer;
       transition: background-color .2s, border-color .2s, color .2s, transform .2s var(--ease-spring);
     }
-    .fade-btn:hover { background: oklch(1 0 0 / .12); }
+    .fade-btn:hover { border-color: var(--white); }
     .fade-btn:active { transform: scale(.96); }
-    .fade-btn[aria-pressed="true"] { background: var(--red); border-color: var(--red); color: var(--cream); }
+    .fade-btn[aria-pressed="true"] { background: var(--white); border-color: var(--white); color: var(--black); box-shadow: 3px 3px 0 var(--red); }
     .t-cut :focus-visible { outline-color: var(--red-light); }
 
     /* Beard trims */
     .strands { position: relative; display: flex; align-items: flex-end; gap: 3px; height: 130px; margin-top: auto; padding-bottom: 10px; }
-    .strands::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 10px; border-radius: 6px; background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--line); }
+    .strands::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 10px; border-radius: 3px; background: repeating-linear-gradient(-45deg, var(--red) 0 6px, var(--white) 6px 12px, var(--black) 12px 16px, var(--white) 16px 22px); box-shadow: inset 0 0 0 2px var(--black); }
     .strand {
       flex: 1; max-width: 9px; margin-inline: auto; height: var(--h); border-radius: 999px 999px 0 0;
-      background: var(--text); opacity: .85;
+      background: var(--text);
       transition: height .45s var(--ease) calc(var(--i) * 28ms);
     }
     .clipper {
-      position: absolute; bottom: 44%; left: 0; width: 48px; height: 26px; z-index: 1;
+      position: absolute; bottom: 44%; left: 0; width: 50px; height: 28px; z-index: 1;
       border-radius: 8px 8px 4px 4px;
-      background: var(--chrome); box-shadow: 0 6px 12px -6px oklch(0 0 0 / .4);
+      background: var(--black); border: 2px solid var(--white); box-shadow: 0 6px 12px -6px oklch(0 0 0 / .5);
       transform: translateX(-120%); opacity: 0;
     }
-    .clipper::after { content: ""; position: absolute; left: 6px; right: 6px; bottom: -5px; height: 5px; background: repeating-linear-gradient(90deg, var(--ink) 0 2px, transparent 2px 5px); }
+    .clipper::before { content: ""; position: absolute; left: 50%; top: 50%; width: 8px; height: 8px; border-radius: 50%; background: var(--red); transform: translate(-50%, -50%); }
+    .clipper::after { content: ""; position: absolute; left: 6px; right: 6px; bottom: -6px; height: 5px; background: repeating-linear-gradient(90deg, var(--text) 0 2px, transparent 2px 5px); }
     .t-beard.is-trimmed .strand, .t-beard:hover .strand { height: calc(28% + var(--h) * .12); }
     .t-beard.is-trimmed .clipper, .t-beard:hover .clipper { animation: clip 1.15s var(--ease) both; }
     @keyframes clip { 0% { transform: translateX(-120%); opacity: 1; } 90% { opacity: 1; } 100% { transform: translateX(calc(var(--w, 400px) + 20%)); opacity: 0; } }
@@ -619,7 +571,7 @@
     .t-shave { display: grid; gap: 22px; }
     @media (min-width: 560px) { .t-shave { grid-template-columns: 1fr 1fr; align-items: stretch; } }
     .t-shave__copy { display: flex; flex-direction: column; gap: 14px; }
-    .razor-box { position: relative; display: grid; place-items: center; min-height: 180px; padding: 16px; border-radius: 20px; background: radial-gradient(circle at 30% 40%, oklch(0.3 0.03 260), var(--ink) 70%); overflow: hidden; }
+    .razor-box { position: relative; display: grid; place-items: center; min-height: 180px; padding: 16px; border-radius: 12px; background: var(--black); border-left: 8px solid var(--red); overflow: hidden; }
     .razor { width: 100%; height: auto; transition: transform .6s var(--ease); }
     .t-shave:hover .razor { transform: rotate(-4deg) translateX(-4px); }
     .razor .gleam { animation: gleam 3.6s var(--ease) 1s infinite; }
@@ -627,13 +579,13 @@
 
     /* Who sits here */
     .roles { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
-    .roles li { padding: 8px 14px; border-radius: 999px; border: 1.5px solid var(--line); font-weight: 600; font-size: .92rem; transition: background-color .2s, border-color .2s, color .2s; }
-    .roles li:hover { background: var(--ink); color: var(--cream); border-color: var(--ink); }
+    .roles li { padding: 8px 14px; border-radius: 4px; border: 2px solid var(--line); font: 600 .95rem/1.2 var(--font-sign); letter-spacing: .08em; text-transform: uppercase; transition: background-color .2s, border-color .2s, color .2s; }
+    .roles li:hover { background: var(--black); color: var(--white); border-color: var(--black); }
 
     /* Book */
-    .t-book { background: var(--red); color: var(--cream); border-color: transparent; --focus: var(--cream); }
-    .t-book p { color: oklch(0.93 0.03 60); }
-    .t-book .tile__tag { background: oklch(0.2 0.025 260 / .22); }
+    .t-book { background: var(--red); color: var(--white); border-color: var(--black); --focus: var(--white); }
+    .t-book p { color: oklch(0.95 0.02 30); }
+    .t-book .tile__tag { background: var(--black); }
     .t-book .btn { margin-top: auto; align-self: flex-start; }
 
     /* =========================================================
@@ -649,21 +601,18 @@
       position: relative;
       padding: clamp(74px, 8vw, 96px) 28px 30px;
       border-radius: var(--radius);
-      background: var(--surface); border: 1px solid var(--line);
-      transition: transform .4s var(--ease), box-shadow .4s var(--ease);
+      background: var(--surface); border: 2px solid var(--line);
+      transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s;
     }
-    .step:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+    .step:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: var(--text); }
     .step__num {
-      position: absolute; top: -.42em; left: 18px;
-      font: 900 clamp(5rem, 3.6rem + 5vw, 8.5rem)/1 var(--font-display); font-stretch: 118%;
-      letter-spacing: -0.04em;
+      position: absolute; top: -.46em; left: 18px;
+      font: 400 clamp(4.6rem, 3.4rem + 4.4vw, 7.6rem)/1 var(--font-display);
       color: var(--red);
-      -webkit-text-stroke: 3px var(--ink);
-      paint-order: stroke fill;
+      text-shadow: 5px 5px 0 var(--num-shadow);
     }
-    @media (prefers-color-scheme: dark) { .step__num { -webkit-text-stroke-color: var(--ink-deep); } }
-    .step__icon { position: absolute; top: 24px; right: 24px; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 16px; background: var(--surface-2); color: var(--accent-text); }
-    .step__title { font-size: clamp(1.5rem, 1.2rem + 1vw, 1.9rem); font-weight: 850; letter-spacing: -0.02em; line-height: 1.05; margin-bottom: 10px; }
+    .step__icon { position: absolute; top: 24px; right: 24px; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 8px; background: var(--black); color: var(--white); }
+    .step__title { font-size: clamp(1.45rem, 1.2rem + .9vw, 1.8rem); line-height: 1.1; margin-bottom: 10px; }
     .step p { color: var(--muted); }
 
     /* =========================================================
@@ -672,18 +621,21 @@
     .reviews { background: var(--surface-2); }
     .reviews__grid { display: grid; gap: 56px; align-items: center; }
     @media (min-width: 900px) { .reviews__grid { grid-template-columns: .9fr 1.1fr; gap: 80px; } }
-    .score { position: relative; display: grid; place-items: center; width: min(100%, 420px); aspect-ratio: 1; margin-inline: auto; }
-    .score::before {
-      content: ""; position: absolute; inset: 14%;
-      border-radius: 24%; transform: rotate(45deg);
-      background: var(--chrome);
+    .score { position: relative; display: grid; place-items: center; width: min(100%, 400px); aspect-ratio: 1; margin-inline: auto; }
+    .score::before { /* seal */
+      content: ""; position: absolute; inset: 6%;
+      border-radius: 50%;
+      background: var(--black);
+      box-shadow: 0 0 0 8px var(--surface-2), 0 0 0 12px var(--red), var(--shadow-lg);
     }
-    .score::after { content: ""; position: absolute; inset: 20%; border-radius: 22%; transform: rotate(45deg) translate(6%, -6%); border: 2px solid var(--text); opacity: .5; }
-    .score__inner { position: relative; z-index: 1; text-align: center; color: var(--ink); }
-    .score__num { font-size: clamp(5.5rem, 4rem + 7vw, 9rem); font-weight: 900; line-height: .85; letter-spacing: -0.05em; }
-    .score .stars { display: flex; justify-content: center; gap: 2px; margin: 12px 0 8px; color: var(--red-deep); }
+    .score::after { content: ""; position: absolute; inset: 11%; border-radius: 50%; border: 2px dashed oklch(1 0 0 / .45); animation: turn 60s linear infinite; }
+    @keyframes turn { to { transform: rotate(360deg); } }
+    .score__inner { position: relative; z-index: 1; text-align: center; color: var(--white); }
+    .score__kicker { font: 600 1rem/1 var(--font-sign); letter-spacing: .3em; text-transform: uppercase; color: var(--red-light); margin-bottom: 12px; }
+    .score__num { font-size: clamp(5rem, 3.8rem + 6vw, 8.4rem); line-height: .9; }
+    .score .stars { display: flex; justify-content: center; gap: 3px; margin: 14px 0 10px; color: var(--red-light); }
     .score .stars .i { width: 22px; height: 22px; }
-    .score__meta { font-weight: 700; }
+    .score__meta { font: 600 1rem/1 var(--font-sign); letter-spacing: .14em; text-transform: uppercase; }
     .reviews .h2 { margin-bottom: 20px; }
     .reviews .lead { margin-bottom: 30px; }
 
@@ -693,15 +645,16 @@
     .compare__grid { display: grid; gap: 40px; }
     @media (min-width: 960px) { .compare__grid { grid-template-columns: .8fr 1.2fr; gap: 64px; align-items: start; } }
     .compare .h2 { margin-bottom: 20px; }
-    .table-wrap { border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); overflow: hidden; }
+    .table-wrap { border-radius: var(--radius); background: var(--surface); border: 2px solid var(--black); box-shadow: 8px 8px 0 var(--red); overflow: hidden; }
+    @media (prefers-color-scheme: dark) { .table-wrap { border-color: var(--line); } }
     .ctable { width: 100%; border-collapse: collapse; }
     .ctable th, .ctable td { padding: 18px 20px; text-align: left; vertical-align: top; }
-    .ctable thead th { font: 800 1rem/1.2 var(--font-display); font-stretch: 110%; border-bottom: 1px solid var(--line); }
-    .ctable thead .is-us { background: var(--red); color: var(--cream); }
+    .ctable thead th { font: 700 1.05rem/1.2 var(--font-sign); letter-spacing: .1em; text-transform: uppercase; border-bottom: 2px solid var(--line); }
+    .ctable thead .is-us { background: var(--black); color: var(--white); border-bottom-color: var(--red); }
     .ctable tbody tr + tr > * { border-top: 1px solid var(--line); }
     .ctable tbody th { font-weight: 700; width: 30%; }
     .ctable td { color: var(--muted); }
-    .ctable td.is-us { color: var(--text); font-weight: 600; background: oklch(0.53 0.19 27 / .08); }
+    .ctable td.is-us { color: var(--text); font-weight: 600; background: oklch(0.56 0.21 27 / .07); }
     .ctable .cell { display: flex; gap: 10px; align-items: flex-start; }
     .ctable .cell .i { margin-top: 2px; }
     .ctable .yes .i { color: oklch(0.55 0.15 150); stroke-width: 3; }
@@ -712,7 +665,7 @@
       .ctable, .ctable tbody, .ctable tr, .ctable th, .ctable td { display: block; width: 100%; }
       .ctable tbody th { width: 100%; padding-bottom: 6px; font-size: 1.05rem; }
       .ctable td { padding-block: 10px; }
-      .ctable td::before { content: attr(data-label); display: block; margin-bottom: 4px; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+      .ctable td::before { content: attr(data-label); display: block; margin-bottom: 4px; font: 600 .8rem/1.2 var(--font-sign); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
       .ctable tbody tr + tr > * { border-top: 0; }
       .ctable tbody tr + tr > th { border-top: 1px solid var(--line); }
     }
@@ -722,14 +675,14 @@
        ========================================================= */
     .visit__grid { display: grid; gap: 20px; }
     @media (min-width: 960px) { .visit__grid { grid-template-columns: 1fr 1.15fr; } }
-    .visit__card { padding: clamp(28px, 4vw, 48px); border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
+    .visit__card { padding: clamp(28px, 4vw, 48px); border-radius: var(--radius); background: var(--surface); border: 2px solid var(--line); }
     .visit .h2 { margin-bottom: 32px; }
     .info { display: grid; gap: 22px; margin-bottom: 34px; }
     .info li { display: grid; grid-template-columns: auto 1fr; gap: 16px; }
-    .info__icon { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 14px; background: var(--red); color: var(--cream); }
-    .info strong { display: block; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
+    .info__icon { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 8px; background: var(--black); color: var(--white); box-shadow: 3px 3px 0 var(--red); }
+    .info strong { display: block; font: 600 .85rem/1.2 var(--font-sign); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
     .info a, .info address, .info span { font-size: 1.08rem; font-weight: 600; }
-    .map { position: relative; min-height: 360px; border-radius: var(--radius); overflow: hidden; padding: 10px; background: var(--chrome); }
+    .map { position: relative; min-height: 360px; border-radius: var(--radius); overflow: hidden; padding: 10px; background: var(--black); border-top: 10px solid var(--red); }
     .map iframe { width: 100%; height: 100%; min-height: 340px; border: 0; border-radius: calc(var(--radius) - 8px); background: var(--surface-2); }
 
     /* =========================================================
@@ -739,19 +692,19 @@
     @media (min-width: 960px) { .faq__grid { grid-template-columns: .8fr 1.2fr; gap: 64px; align-items: start; } }
     .faq .h2 { margin-bottom: 20px; }
     .faq__list { display: grid; gap: 12px; }
-    .faq__item { border-radius: 20px; background: var(--surface); border: 1px solid var(--line); transition: box-shadow .3s var(--ease); }
-    .faq__item[open] { box-shadow: var(--shadow); }
+    .faq__item { border-radius: 12px; background: var(--surface); border: 2px solid var(--line); transition: box-shadow .3s var(--ease), border-color .3s; }
+    .faq__item[open] { box-shadow: var(--shadow); border-color: var(--text); }
     .faq__item summary {
       display: flex; align-items: center; justify-content: space-between; gap: 16px;
       padding: 20px 22px; cursor: pointer; list-style: none;
-      font-weight: 700; font-size: 1.08rem; border-radius: 20px;
+      font-weight: 700; font-size: 1.08rem; border-radius: 12px;
     }
     .faq__item summary::-webkit-details-marker { display: none; }
-    .faq__icon { position: relative; flex: none; width: 34px; height: 34px; border-radius: 50%; background: var(--surface-2); transition: background-color .25s, transform .35s var(--ease); }
+    .faq__icon { position: relative; flex: none; width: 34px; height: 34px; border-radius: 6px; background: var(--surface-2); transition: background-color .25s, transform .35s var(--ease); }
     .faq__icon::before, .faq__icon::after { content: ""; position: absolute; left: 50%; top: 50%; width: 12px; height: 2px; background: currentColor; border-radius: 2px; transform: translate(-50%, -50%); }
     .faq__icon::after { transform: translate(-50%, -50%) rotate(90deg); transition: transform .35s var(--ease); }
-    .faq__item summary:hover .faq__icon { background: var(--red); color: var(--cream); }
-    .faq__item[open] .faq__icon { background: var(--red); color: var(--cream); transform: rotate(180deg); }
+    .faq__item summary:hover .faq__icon { background: var(--red); color: var(--white); }
+    .faq__item[open] .faq__icon { background: var(--red); color: var(--white); transform: rotate(180deg); }
     .faq__item[open] .faq__icon::after { transform: translate(-50%, -50%) rotate(0deg); }
     .faq__answer { padding: 0 22px 22px; color: var(--muted); max-width: 62ch; }
     .faq__item[open] .faq__answer { animation: fadeUp .4s var(--ease); }
@@ -759,32 +712,33 @@
     /* =========================================================
        FINAL CTA + FOOTER
        ========================================================= */
-    .final { position: relative; isolation: isolate; overflow: clip; background: var(--red); color: var(--cream); padding-block: clamp(96px, 14vw, 180px); --focus: var(--cream); }
-    .final__pattern { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; color: var(--cream); opacity: .12; }
+    .final { position: relative; isolation: isolate; overflow: clip; background: var(--black); color: var(--white); padding-block: clamp(96px, 14vw, 180px); border-top: 10px solid var(--red); --focus: var(--white); }
+    .final__pattern { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; color: var(--white); opacity: .07; }
     .final__inner { display: grid; justify-items: start; gap: 28px; }
-    .final__title { font-size: clamp(3rem, 1.2rem + 8vw, 8.4rem); font-weight: 900; line-height: .88; letter-spacing: -0.045em; }
+    .final__sign { font: 700 clamp(1rem, .9rem + .5vw, 1.3rem)/1 var(--font-sign); letter-spacing: .2em; text-transform: uppercase; color: var(--red-light); }
+    .final__title { font-size: clamp(2.8rem, 1.2rem + 7vw, 7.4rem); line-height: .95; }
     .final__title span { display: block; }
-    .final__title .outline { color: transparent; -webkit-text-stroke: 2.5px var(--cream); }
-    .final p { font-size: clamp(1.1rem, 1rem + .4vw, 1.3rem); font-weight: 500; max-width: 36ch; }
+    .final__title .accent { color: var(--red); text-shadow: 4px 4px 0 var(--black-deep); }
+    .final p { font-size: clamp(1.1rem, 1rem + .4vw, 1.3rem); font-weight: 500; max-width: 36ch; color: oklch(0.85 0.004 260); }
 
-    .footer { background: var(--ink); color: oklch(0.85 0.012 260); padding-block: 72px 32px; }
-    .footer .brand { color: oklch(0.97 0.01 85); margin-bottom: 18px; }
+    .footer { background: var(--black-deep); color: oklch(0.85 0.005 260); padding-block: 72px 32px; }
+    .footer .brand { color: var(--white); margin-bottom: 18px; }
     .footer__grid { display: grid; gap: 40px; }
     @media (min-width: 800px) { .footer__grid { grid-template-columns: 1.4fr 1fr 1fr 1fr; } }
-    .footer h2 { font: 700 .78rem/1 var(--font-body); letter-spacing: .14em; text-transform: uppercase; color: var(--red-light); margin-bottom: 16px; }
+    .footer h2 { font: 600 .95rem/1 var(--font-sign); letter-spacing: .16em; text-transform: uppercase; color: var(--red-light); margin-bottom: 16px; }
     .footer li + li { margin-top: 10px; }
     .footer a { text-decoration: none; }
     .footer a:hover { color: var(--red-light); }
     .footer__slogan { max-width: 30ch; }
-    .footer__bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 56px; padding-top: 24px; border-top: 1px solid oklch(1 0 0 / .12); font-size: .9rem; color: oklch(0.72 0.012 260); }
+    .footer__bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 56px; padding-top: 24px; border-top: 1px solid oklch(1 0 0 / .12); font-size: .9rem; color: oklch(0.72 0.005 260); }
     .footer :focus-visible { outline-color: var(--red-light); }
 
     /* Floating call button */
     .fab {
       position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); z-index: 90;
       display: grid; place-items: center; width: 62px; height: 62px; border-radius: 50%;
-      background: var(--red); color: var(--cream); border: 2px solid var(--ink-deep);
-      box-shadow: 0 4px 0 var(--ink-deep), 0 18px 34px -12px oklch(0.2 0.08 27 / .6);
+      background: var(--red); color: var(--white); border: 2px solid var(--black-deep);
+      box-shadow: 3px 3px 0 var(--black-deep), 0 18px 34px -12px oklch(0 0 0 / .6);
       transform: translateY(140%) scale(.8); opacity: 0;
       transition: transform .45s var(--ease-spring), opacity .3s, box-shadow .2s;
     }
@@ -818,8 +772,7 @@
         animation-iteration-count: 1 !important;
         transition-duration: .01ms !important;
       }
-      .marquee__track, .tape__track, .pole__glass, .razor .gleam, .clipper { animation: none !important; }
-      .typing { display: none; }
+      .marquee__track, .tape__track, .e-pole__glass, .razor .gleam, .clipper, .score::after { animation: none !important; }
     }
   </style>
 </head>
@@ -828,18 +781,17 @@
   <!-- Icon and pattern sprite (reused across the page) -->
   <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false">
     <defs>
-      <pattern id="pole-stripes" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(-40)">
-        <rect width="18" height="18" fill="#F4ECDC"/>
-        <rect width="4.5" height="18" fill="#C0322B"/>
-        <rect x="9" width="4.5" height="18" fill="#2F4E8C"/>
+      <pattern id="pole-stripes" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(-40)">
+        <rect width="16" height="16" fill="#fff"/>
+        <rect width="5" height="16" fill="#D02B24"/>
+        <rect x="8" width="3" height="16" fill="#141416"/>
       </pattern>
       <symbol id="pole" viewBox="0 0 24 64">
-        <circle cx="12" cy="5" r="4.5" fill="#C9CDD3"/>
-        <rect x="2" y="9" width="20" height="5" rx="2" fill="#C9CDD3"/>
+        <circle cx="12" cy="5" r="4.5" fill="currentColor"/>
+        <rect x="2" y="9" width="20" height="5" rx="1.5" fill="currentColor"/>
         <rect x="4" y="14" width="16" height="36" fill="url(#pole-stripes)"/>
-        <rect x="4" y="14" width="4" height="36" fill="#fff" opacity=".35"/>
-        <rect x="2" y="50" width="20" height="5" rx="2" fill="#C9CDD3"/>
-        <path d="M7 55h10l-2 6H9z" fill="#C9CDD3"/>
+        <rect x="2" y="50" width="20" height="5" rx="1.5" fill="currentColor"/>
+        <path d="M7 55h10l-2 6H9z" fill="currentColor"/>
       </symbol>
       <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
       <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></symbol>
@@ -851,25 +803,14 @@
       <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
       <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h3"/></symbol>
 
-      <!-- Line-art barber tools pattern -->
-      <pattern id="tools" width="180" height="180" patternUnits="userSpaceOnUse" patternTransform="rotate(-10)">
-        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <!-- scissors -->
-          <circle cx="22" cy="22" r="7"/><circle cx="22" cy="50" r="7"/><path d="M28 26 62 56M28 46 62 16"/>
-          <!-- comb -->
-          <rect x="100" y="12" width="58" height="10" rx="3"/><path d="M104 22v12M110 22v12M116 22v12M122 22v12M128 22v12M134 22v12M140 22v12M146 22v12M152 22v12"/>
-          <!-- clippers -->
-          <rect x="128" y="84" width="26" height="46" rx="9"/><path d="M131 84v-6M137 84v-6M143 84v-6M149 84v-6"/><circle cx="141" cy="108" r="4"/>
-          <!-- straight razor -->
-          <path d="M16 112h40a6 6 0 0 1 0 12H22a6 6 0 0 1-6-6z"/><path d="M56 118l30 18"/>
-          <!-- barber pole -->
-          <circle cx="92" cy="72" r="4"/><rect x="84" y="78" width="16" height="4" rx="2"/><path d="M86 82h12v26H86z"/><path d="M86 92l12-7M86 102l12-7"/><rect x="84" y="108" width="16" height="4" rx="2"/>
-          <!-- brush -->
-          <path d="M24 150h22v8H24z"/><path d="M28 158h14l-2 18h-10z"/>
-          <!-- sparkle -->
-          <path d="M100 150v14M93 157h14"/>
-          <!-- spray bottle -->
-          <path d="M150 150h12v6h-12zM148 156h16v22h-16z"/><path d="M162 152h6"/>
+      <!-- Folding security gate, like the one on the storefront -->
+      <pattern id="gate" width="56" height="112" patternUnits="userSpaceOnUse">
+        <g fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M0 0 56 112M56 0 0 112"/>
+          <path d="M0 0v112M28 0v112" stroke-width="4"/>
+        </g>
+        <g fill="currentColor">
+          <circle cx="28" cy="56" r="4"/><circle cx="0" cy="0" r="4"/><circle cx="56" cy="0" r="4"/><circle cx="0" cy="112" r="4"/><circle cx="56" cy="112" r="4"/>
         </g>
       </pattern>
     </defs>
@@ -898,7 +839,7 @@
       </nav>
 
       <div class="header__actions">
-        <a class="btn btn--ink header__cta" data-tel href="tel:+14153682421">
+        <a class="btn header__cta" data-tel href="tel:+14153682421">
           <svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>
           <span class="label">Call to book</span>
           <span class="sr-only">(415) 368-2421</span>
@@ -915,11 +856,11 @@
          HERO
          ===================================================== -->
     <section class="hero" id="top" aria-labelledby="hero-title">
-      <svg class="hero__pattern" aria-hidden="true"><rect width="100%" height="100%" fill="url(#tools)"/></svg>
+      <svg class="hero__pattern" aria-hidden="true"><rect width="100%" height="100%" fill="url(#gate)"/></svg>
 
       <div class="container hero__grid">
         <div class="hero__copy">
-          <p class="hero__eyebrow"><span class="dot" aria-hidden="true"></span>Barbershop · Mission District, SF</p>
+          <p class="hero__eyebrow"><span class="dot" aria-hidden="true"></span>Hair cuts &amp; shaves · Mission St, SF</p>
 
           <h1 class="hero__title" id="hero-title">
             <span class="w" style="--i:0">Your</span>
@@ -930,10 +871,10 @@
             <span class="w" style="--i:5">Mission.</span></span>
           </h1>
 
-          <p class="hero__sub">Men's haircuts, fades, beard trims and head shaves on Mission St. Call the shop, grab a chair, walk out sharp.</p>
+          <p class="hero__sub">An old-school neighborhood barbershop on Mission St. Fades, beard trims and head shaves, done right. Call the shop, grab a chair, walk out sharp.</p>
 
           <div class="btn-row">
-            <a class="btn btn--ink btn--lg" data-tel href="tel:+14153682421">
+            <a class="btn btn--on-dark btn--lg" data-tel href="tel:+14153682421">
               Call to book
               <svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
               <span class="sr-only">(415) 368-2421</span>
@@ -952,48 +893,48 @@
           </p>
         </div>
 
-        <!-- Illustrative composition: booking by phone -->
+        <!-- Illustrative composition: the emblem painted above the shop door -->
         <div class="stage" data-tilt aria-hidden="true">
           <div class="stage__inner">
-            <div class="diamond diamond--outline"></div>
-            <div class="diamond diamond--chrome">
-              <div class="diamond__core">
-                <div class="pole">
-                  <span class="pole__ball"></span>
-                  <span class="pole__cap"></span>
-                  <span class="pole__glass"></span>
-                  <span class="pole__cap pole__cap--bottom"></span>
-                  <span class="pole__base"></span>
-                </div>
-              </div>
+            <div class="wallpanel"></div>
+
+            <div class="emblem">
+              <svg viewBox="0 0 400 400">
+                <g class="e-sign">
+                  <rect x="128" y="44" width="144" height="190" rx="12" fill="#141416"/>
+                  <rect x="136" y="52" width="128" height="174" rx="8" fill="none" stroke="#fff" stroke-width="2"/>
+                  <circle cx="200" cy="132" r="58" fill="#D02B24"/>
+                  <!-- barber bust -->
+                  <path d="M140 226c4-32 30-44 60-44s56 12 60 44z" fill="#141416"/>
+                  <path d="M186 186l14 18 14-18" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+                  <rect x="189" y="156" width="22" height="30" fill="#D9D3C7"/>
+                  <ellipse cx="171" cy="128" rx="6" ry="10" fill="#D9D3C7"/>
+                  <ellipse cx="229" cy="128" rx="6" ry="10" fill="#D9D3C7"/>
+                  <ellipse cx="200" cy="124" rx="29" ry="37" fill="#E6E0D5"/>
+                  <path d="M171 124c0 36 14 52 29 52s29-16 29-52c-6 18-16 22-29 22s-23-4-29-22z" fill="#141416"/>
+                  <path d="M186 143c6-5 14-3 14-3s8-2 14 3c-5 4-10 3-14 2-4 1-9 2-14-2z" fill="#141416"/>
+                  <path d="M188 120h8M204 120h8" stroke="#141416" stroke-width="3.5" stroke-linecap="round"/>
+                  <path d="M170 116c-5-30 8-50 34-52 26-1 38 14 34 32 9 1 2 16-6 20-3-14-16-20-32-19-14 0-25 6-30 19z" fill="#141416"/>
+                  <path d="M186 78c10-8 28-10 40-2" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2.5" stroke-linecap="round"/>
+                </g>
+                <!-- ribbon -->
+                <g class="e-ribbon">
+                  <path d="M116 252H72l15 22-15 22h44z" fill="#141416" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+                  <path d="M284 252h44l-15 22 15 22h-44z" fill="#141416" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+                  <path d="M104 238h192v50H104z" fill="#141416" stroke="#fff" stroke-width="3"/>
+                  <text x="200" y="275" text-anchor="middle" font-family="'Alfa Slab One', Rockwell, Georgia, serif" font-size="28" letter-spacing="2" fill="#fff">DE LEON</text>
+                </g>
+                <!-- mustache -->
+                <path class="e-stache" d="M200 316c-10-14-30-16-44-6-9 7-20 8-29 0 0 18 20 28 40 22 14-4 25-11 33-13 8 2 19 9 33 13 20 6 40-4 40-22-9 8-20 7-29 0-14-10-34-8-44 6z" fill="#141416"/>
+              </svg>
+              <div class="e-pole e-pole--l"><span class="e-pole__ball"></span><span class="e-pole__cap"></span><span class="e-pole__glass"></span><span class="e-pole__cap"></span></div>
+              <div class="e-pole e-pole--r"><span class="e-pole__ball"></span><span class="e-pole__cap"></span><span class="e-pole__glass"></span><span class="e-pole__cap"></span></div>
             </div>
 
             <div class="chip chip--rating">
               <svg class="i i--fill"><use href="#i-star"/></svg> 5.0 on Google
             </div>
-
-            <div class="chat">
-              <div class="chat__head">
-                <span class="chat__avatar"><svg class="i"><use href="#i-scissors"/></svg></span>
-                <div><b>De Leon Barbershop</b><small>on a call · 00:41</small></div>
-              </div>
-              <div class="chat__body">
-                <p class="msg msg--out" style="--d:1.9s">
-                  Hey! Got a chair this afternoon?<br>
-                  • Low fade<br>
-                  • Beard line-up
-                  <time>2:12 PM</time>
-                </p>
-                <div class="reply-slot">
-                  <p class="typing" style="--d:3s"><i></i><i></i><i></i></p>
-                  <p class="msg msg--in" style="--d:4.4s">Sure thing ✂️ 4:30 works. Chair's yours, see you then.<time>2:13 PM</time></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="chip chip--ok">
-              <svg class="i"><use href="#i-check"/></svg> Chair booked
-            </div>
+            <div class="chip chip--sign">Hair cuts &amp; shaves</div>
           </div>
         </div>
       </div>
@@ -1026,8 +967,8 @@
 
       <div class="marquee" aria-hidden="true">
         <div class="marquee__track">
-          <div class="marquee__group"><span>Men's haircuts</span><span>Fades</span><span>Beard trims</span><span>Head shaves</span><span>Call to book</span><span>2138 Mission St · SF</span></div>
-          <div class="marquee__group"><span>Men's haircuts</span><span>Fades</span><span>Beard trims</span><span>Head shaves</span><span>Call to book</span><span>2138 Mission St · SF</span></div>
+          <div class="marquee__group"><span>Hair cuts</span><span>Fades</span><span>Beard trims</span><span>Head shaves</span><span>Call to book</span><span>2138 Mission St</span></div>
+          <div class="marquee__group"><span>Hair cuts</span><span>Fades</span><span>Beard trims</span><span>Head shaves</span><span>Call to book</span><span>2138 Mission St</span></div>
         </div>
       </div>
     </section>
@@ -1055,7 +996,7 @@
             <li class="pain reveal">
               <span class="pain__x" aria-hidden="true"><svg class="i"><use href="#i-x"/></svg></span>
               <div>
-                <h3>Your lunch break, on the waiting bench</h3>
+                <h3>Your lunch break, on the bench</h3>
                 <p>You walk in hoping for a quick cut and spend the hour watching everyone else get theirs.</p>
               </div>
             </li>
@@ -1072,9 +1013,9 @@
         <div class="solution reveal">
           <div>
             <p class="eyebrow">The fix</p>
-            <p class="solution__text">Call ahead, tell us what you want, and sit down in a chair that's ready for you. <strong>Five stars on Google for a reason.</strong></p>
+            <p class="solution__text">Call ahead, tell your barber what you want, and sit down in a chair that's ready for you. <strong>Five stars on Google for a reason.</strong></p>
           </div>
-          <a class="btn btn--ink btn--lg" data-tel href="tel:+14153682421">
+          <a class="btn btn--lg" data-tel href="tel:+14153682421">
             Call to book
             <svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
             <span class="sr-only">(415) 368-2421</span>
@@ -1083,18 +1024,18 @@
       </div>
     </section>
 
-    <!-- Barber tapes: intentional grid break -->
+    <!-- Painted sign bands: intentional grid break -->
     <div class="tapes" aria-hidden="true">
       <div class="tape tape--back">
         <div class="tape__track">
-          <div class="tape__group"><span>Fades</span><span>✦</span><span>Beard trims</span><span>✦</span><span>Head shaves</span><span>✦</span><span>Men's haircuts</span><span>✦</span><span>Fades</span><span>✦</span><span>Beard trims</span><span>✦</span><span>Head shaves</span><span>✦</span><span>Men's haircuts</span><span>✦</span></div>
-          <div class="tape__group"><span>Fades</span><span>✦</span><span>Beard trims</span><span>✦</span><span>Head shaves</span><span>✦</span><span>Men's haircuts</span><span>✦</span><span>Fades</span><span>✦</span><span>Beard trims</span><span>✦</span><span>Head shaves</span><span>✦</span><span>Men's haircuts</span><span>✦</span></div>
+          <div class="tape__group"><span>Fades</span><span>✂</span><span>Beard trims</span><span>✂</span><span>Head shaves</span><span>✂</span><span>Line-ups</span><span>✂</span><span>Fades</span><span>✂</span><span>Beard trims</span><span>✂</span><span>Head shaves</span><span>✂</span><span>Line-ups</span><span>✂</span></div>
+          <div class="tape__group"><span>Fades</span><span>✂</span><span>Beard trims</span><span>✂</span><span>Head shaves</span><span>✂</span><span>Line-ups</span><span>✂</span><span>Fades</span><span>✂</span><span>Beard trims</span><span>✂</span><span>Head shaves</span><span>✂</span><span>Line-ups</span><span>✂</span></div>
         </div>
       </div>
       <div class="tape">
         <div class="tape__track">
-          <div class="tape__group"><span>Walk out sharp</span><span>✦</span><span>Walk out sharp</span><span>✦</span><span>Walk out sharp</span><span>✦</span><span>Walk out sharp</span><span>✦</span><span>Walk out sharp</span><span>✦</span></div>
-          <div class="tape__group"><span>Walk out sharp</span><span>✦</span><span>Walk out sharp</span><span>✦</span><span>Walk out sharp</span><span>✦</span><span>Walk out sharp</span><span>✦</span><span>Walk out sharp</span><span>✦</span></div>
+          <div class="tape__group"><span>Hair cuts &amp; shaves</span><span>★</span><span>Hair cuts &amp; shaves</span><span>★</span><span>Hair cuts &amp; shaves</span><span>★</span><span>Hair cuts &amp; shaves</span><span>★</span></div>
+          <div class="tape__group"><span>Hair cuts &amp; shaves</span><span>★</span><span>Hair cuts &amp; shaves</span><span>★</span><span>Hair cuts &amp; shaves</span><span>★</span><span>Hair cuts &amp; shaves</span><span>★</span></div>
         </div>
       </div>
     </div>
@@ -1117,27 +1058,32 @@
           <!-- Haircuts & fades -->
           <article class="tile t-cut reveal" aria-labelledby="t-cu">
             <span class="tile__tag">Service</span>
-            <h3 class="tile__title" id="t-cu">Haircuts &amp; fades.</h3>
+            <h3 class="tile__title" id="t-cu">Hair cuts &amp; fades.</h3>
             <p>Low, mid or high fades, tapers and classic cuts, blended clean so they grow out right.</p>
             <div class="mirror" aria-hidden="true">
-              <span class="mirror__frame"></span>
+              <span class="mirror__frame">
               <svg class="head" viewBox="0 0 200 220">
                 <defs>
                   <linearGradient id="fade-grad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0" stop-color="#3A2F27"/>
-                    <stop id="fade-top" offset="0.5" stop-color="#3A2F27"/>
-                    <stop id="fade-bottom" offset="0.82" stop-color="#9C7A5F"/>
-                    <stop offset="1" stop-color="#9C7A5F"/>
+                    <stop offset="0" stop-color="#141416"/>
+                    <stop id="fade-top" offset="0.5" stop-color="#141416"/>
+                    <stop id="fade-bottom" offset="0.82" stop-color="#B9B2A6"/>
+                    <stop offset="1" stop-color="#B9B2A6"/>
                   </linearGradient>
                 </defs>
-                <rect x="80" y="158" width="40" height="54" rx="10" fill="#A37F61"/>
-                <ellipse cx="54" cy="116" rx="10" ry="16" fill="#B08A69"/>
-                <ellipse cx="146" cy="116" rx="10" ry="16" fill="#B08A69"/>
-                <ellipse cx="100" cy="112" rx="46" ry="60" fill="#BC9573"/>
-                <path d="M54 122C50 72 70 40 100 38c30 2 50 34 46 84h-6c-1-22-7-36-18-44-14 6-30 6-44 0-11 8-17 22-18 44z" fill="url(#fade-grad)"/>
-                <path d="M84 120h10M106 120h10" stroke="#3A2F27" stroke-width="4" stroke-linecap="round"/>
-                <path d="M90 148c6 4 14 4 20 0" fill="none" stroke="#6E4B3B" stroke-width="3" stroke-linecap="round"/>
+                <path d="M36 220c6-32 34-46 64-46s58 14 64 46z" fill="#141416"/>
+                <path d="M86 178l14 16 14-16" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+                <rect x="82" y="150" width="36" height="34" fill="#CFC8BC"/>
+                <ellipse cx="54" cy="116" rx="10" ry="16" fill="#D9D3C7" stroke="#141416" stroke-width="3"/>
+                <ellipse cx="146" cy="116" rx="10" ry="16" fill="#D9D3C7" stroke="#141416" stroke-width="3"/>
+                <ellipse cx="100" cy="112" rx="46" ry="60" fill="#E6E0D5" stroke="#141416" stroke-width="3"/>
+                <path d="M54 118c0 42 22 60 46 60s46-18 46-60c-6 22-24 30-46 30s-40-8-46-30z" fill="#141416"/>
+                <path d="M80 141c10-8 20-4 20-4s10-4 20 4c-8 6-15 4-20 3-5 1-12 3-20-3z" fill="#141416"/>
+                <path d="M80 110h14M106 110h14" stroke="#141416" stroke-width="4" stroke-linecap="round"/>
+                <path d="M54 122C50 66 70 28 104 26c28-1 46 22 42 96h-6c-1-22-7-36-18-44-14 6-30 6-44 0-11 8-17 22-18 44z" fill="url(#fade-grad)"/>
+                <path d="M78 46c14-12 40-14 56-2" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
               </svg>
+              </span>
             </div>
             <p class="fade-label" id="fade-label" aria-live="polite">Mid fade</p>
             <div class="fades" role="group" aria-label="Pick a fade height">
@@ -1162,8 +1108,8 @@
           <article class="tile t-shave reveal" aria-labelledby="t-sh">
             <div class="t-shave__copy">
               <span class="tile__tag">Service</span>
-              <h3 class="tile__title" id="t-sh">Head shaves.</h3>
-              <p>Smooth, close and careful. A clean scalp, finished properly, with no rush.</p>
+              <h3 class="tile__title" id="t-sh">Shaves.</h3>
+              <p>Smooth, close and careful head shaves. A clean scalp, finished properly, with no rush.</p>
             </div>
             <div class="razor-box" aria-hidden="true">
               <svg class="razor" viewBox="0 0 360 120">
@@ -1183,10 +1129,10 @@
                 <path d="M20 30h180a12 12 0 0 1 12 12v22H44A24 24 0 0 1 20 40z" fill="url(#blade)"/>
                 <path d="M44 64h168" stroke="#F8F8F8" stroke-width="2"/>
                 <g clip-path="url(#blade-clip)"><rect class="gleam" x="-70" y="20" width="50" height="60" fill="url(#gleam-grad)" transform="skewX(-20)"/></g>
-                <path d="M196 60h140a16 16 0 0 1 0 32H196z" fill="#3B2A22"/>
-                <path d="M206 68h126" stroke="#FFFFFF" stroke-opacity=".14" stroke-width="3" stroke-linecap="round"/>
-                <circle cx="208" cy="76" r="6" fill="#CFD2D6"/>
-                <circle cx="326" cy="76" r="4" fill="#CFD2D6"/>
+                <path d="M196 60h140a16 16 0 0 1 0 32H196z" fill="#D02B24"/>
+                <path d="M206 68h126" stroke="#FFFFFF" stroke-opacity=".25" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="208" cy="76" r="6" fill="#141416" stroke="#CFD2D6" stroke-width="2"/>
+                <circle cx="326" cy="76" r="4" fill="#141416" stroke="#CFD2D6" stroke-width="2"/>
               </svg>
             </div>
           </article>
@@ -1195,7 +1141,7 @@
           <article class="tile t-pro reveal" aria-labelledby="t-pr">
             <span class="tile__tag">Who sits here</span>
             <h3 class="tile__title" id="t-pr">Regulars and first-timers.</h3>
-            <p>Tell us what you want or show a photo. Straight talk in the chair.</p>
+            <p>Tell your barber what you want or show a photo. Straight talk in the chair.</p>
             <ul class="roles" aria-label="Popular requests">
               <li>Low fades</li><li>High &amp; tight</li><li>Tapers</li><li>Buzz cuts</li><li>Classic cuts</li><li>Beard line-ups</li>
             </ul>
@@ -1258,6 +1204,7 @@
       <div class="container reviews__grid">
         <div class="score reveal">
           <div class="score__inner">
+            <p class="score__kicker">Rated</p>
             <p class="score__num">5.0</p>
             <div class="stars" role="img" aria-label="Rated 5.0 out of 5">
               <svg class="i i--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="i i--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="i i--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="i i--fill" aria-hidden="true"><use href="#i-star"/></svg><svg class="i i--fill" aria-hidden="true"><use href="#i-star"/></svg>
@@ -1303,29 +1250,29 @@
             <thead>
               <tr>
                 <th scope="col"><span class="sr-only">What matters</span></th>
-                <th scope="col" class="is-us">De Leon Barbershop</th>
+                <th scope="col" class="is-us">De Leon</th>
                 <th scope="col">Chain salon</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">Who cuts you</th>
-                <td class="is-us yes" data-label="De Leon Barbershop"><span class="cell"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>A barber who does fades all day</span></td>
+                <td class="is-us yes" data-label="De Leon"><span class="cell"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>A barber who does fades all day</span></td>
                 <td class="no" data-label="Chain salon"><span class="cell"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg>Whoever happens to be free</span></td>
               </tr>
               <tr>
                 <th scope="row">Booking</th>
-                <td class="is-us yes" data-label="De Leon Barbershop"><span class="cell"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>One call, a real person picks up</span></td>
+                <td class="is-us yes" data-label="De Leon"><span class="cell"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>One call, a real person picks up</span></td>
                 <td class="no" data-label="Chain salon"><span class="cell"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg>An online queue that keeps slipping</span></td>
               </tr>
               <tr>
                 <th scope="row">The finish</th>
-                <td class="is-us yes" data-label="De Leon Barbershop"><span class="cell"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Time taken to blend it right</span></td>
+                <td class="is-us yes" data-label="De Leon"><span class="cell"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Time taken to blend it right</span></td>
                 <td class="no" data-label="Chain salon"><span class="cell"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg>Rushed to get to the next client</span></td>
               </tr>
               <tr>
                 <th scope="row">Getting there</th>
-                <td class="is-us yes" data-label="De Leon Barbershop"><span class="cell"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>On Mission St, a short walk from 16th St BART</span></td>
+                <td class="is-us yes" data-label="De Leon"><span class="cell"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>On Mission St, a short walk from 16th St BART</span></td>
                 <td class="no" data-label="Chain salon"><span class="cell"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg>Wherever the strip mall is</span></td>
               </tr>
             </tbody>
@@ -1341,7 +1288,7 @@
       <div class="container visit__grid">
         <div class="visit__card reveal">
           <p class="eyebrow">Visit us</p>
-          <h2 class="h2" id="visit-title">Come by 2138 Mission St.</h2>
+          <h2 class="h2" id="visit-title">Look for the black storefront on Mission St.</h2>
           <ul class="info">
             <li>
               <span class="info__icon" aria-hidden="true"><svg class="i"><use href="#i-pin"/></svg></span>
@@ -1412,7 +1359,7 @@
           </details>
           <details class="faq__item">
             <summary>What services do you offer?<span class="faq__icon" aria-hidden="true"></span></summary>
-            <p class="faq__answer">Men's haircuts and fades, beard trims and head shaves. Have something specific in mind? Ask when you call.</p>
+            <p class="faq__answer">Hair cuts and fades, beard trims and head shaves. Have something specific in mind? Ask when you call.</p>
           </details>
           <details class="faq__item">
             <summary>Can I bring a reference photo?<span class="faq__icon" aria-hidden="true"></span></summary>
@@ -1420,7 +1367,7 @@
           </details>
           <details class="faq__item">
             <summary>Where are you located?<span class="faq__icon" aria-hidden="true"></span></summary>
-            <p class="faq__answer">2138 Mission St, San Francisco, CA 94110, in the Mission District, a short walk from 16th St Mission BART.</p>
+            <p class="faq__answer">2138 Mission St, San Francisco, CA 94110, in the Mission District, a short walk from 16th St Mission BART. Look for the black storefront with the red trim and the "Barbershop" sign.</p>
           </details>
           <details class="faq__item">
             <summary>What are your hours?<span class="faq__icon" aria-hidden="true"></span></summary>
@@ -1435,12 +1382,13 @@
          FINAL CTA
          ===================================================== -->
     <section class="final" aria-labelledby="final-title">
-      <svg class="final__pattern" aria-hidden="true"><rect width="100%" height="100%" fill="url(#tools)"/></svg>
+      <svg class="final__pattern" aria-hidden="true"><rect width="100%" height="100%" fill="url(#gate)"/></svg>
       <div class="container final__inner reveal">
-        <h2 class="final__title" id="final-title"><span>Need a cut?</span><span class="outline">Grab the chair.</span></h2>
+        <p class="final__sign">Hair cuts &amp; shaves</p>
+        <h2 class="final__title" id="final-title"><span>Need a cut?</span><span class="accent">Grab the chair.</span></h2>
         <p>Call now and lock in a time that fits your day.</p>
         <div class="btn-row">
-          <a class="btn btn--ink btn--lg" data-tel href="tel:+14153682421">
+          <a class="btn btn--on-dark btn--lg" data-tel href="tel:+14153682421">
             <svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>
             Call (415) 368-2421
           </a>
@@ -1465,7 +1413,7 @@
             <svg class="brand__pole" viewBox="0 0 24 64" aria-hidden="true"><use href="#pole"/></svg>
             <span class="brand__word" aria-hidden="true"><span class="bold">DE LEON</span><span class="thin">BARBERSHOP</span></span>
           </a>
-          <p class="footer__slogan">Neighborhood barbershop on Mission St. Fades, beard trims and head shaves, done right.</p>
+          <p class="footer__slogan">Old-school neighborhood barbershop on Mission St. Hair cuts &amp; shaves, done right.</p>
         </div>
         <div>
           <h2>Address</h2>
