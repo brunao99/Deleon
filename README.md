@@ -12,3 +12,7 @@ Open `index.html` in a browser, or serve the folder with any static host.
 - Optionally paste 3 real Google reviews (with permission) into the commented testimonials block.
 
 The phone number used by every call button is set once in the `PHONE` constant at the bottom of `index.html`.
+
+## Photos
+
+`img/` holds the shop photos used on the page (resized and compressed). Before going live, confirm with the shop that every photo can be used on its website, since photos uploaded to Google Maps by customers belong to whoever took them.

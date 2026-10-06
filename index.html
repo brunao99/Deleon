@@ -314,7 +314,7 @@
       padding: calc(var(--header-h) + clamp(28px, 6vw, 72px)) 0 clamp(120px, 14vw, 190px);
       border-bottom: 10px solid var(--red);
     }
-    @media (max-width: 959.98px) { .hero { padding-bottom: 150px; } }
+    @media (max-width: 959.98px) { .hero { padding-bottom: 180px; } }
     .hero__pattern {
       position: absolute; inset: -60px; z-index: -1;
       width: calc(100% + 120px); height: calc(100% + 120px);
@@ -353,7 +353,7 @@
     .stage { position: relative; width: min(100%, 540px); aspect-ratio: 1; margin-inline: auto; perspective: 1100px; animation: fadeUp 1s var(--ease) .3s both; }
     .stage__inner { position: absolute; inset: 0; transform-style: preserve-3d; transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg)); }
     .photo { position: absolute; margin: 0; overflow: hidden; }
-    .photo img { width: 100%; height: 100%; object-fit: cover; }
+    .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 35%; }
     .photo--interior {
       inset: 2% 6% 9% 16%;
       border-top: 14px solid var(--red); border-right: 14px solid var(--red);
@@ -369,7 +369,7 @@
       box-shadow: 0 26px 50px -18px oklch(0 0 0 / .8);
       animation: pop .7s var(--ease-spring) 1.2s both;
     }
-    .photo--front img { height: auto; aspect-ratio: 442 / 628; }
+    .photo--front img { height: auto; aspect-ratio: 3 / 4; }
     .photo--front figcaption { padding: 8px 2px 10px; font: 600 clamp(.7rem, .6rem + .35vw, .9rem)/1 var(--font-sign); letter-spacing: .14em; text-transform: uppercase; text-align: center; }
 
     /* Emblem on a plaster wall (final CTA) */
@@ -420,7 +420,7 @@
     .chip--rating { right: -2%; top: -3%; background: var(--red); color: var(--white); border: 2px solid var(--black); transform: translateZ(120px) rotate(6deg); animation: pop .6s var(--ease-spring) 2s both; }
     .chip--sign { right: -2%; bottom: 14%; padding: 14px 18px; background: var(--black); color: var(--white); border: 2px solid var(--white); outline: 3px solid var(--black); font-size: clamp(.95rem, .8rem + .5vw, 1.2rem); transform: translateZ(110px) rotate(-4deg); animation: pop .6s var(--ease-spring) 2.3s both; }
     @keyframes pop { from { opacity: 0; transform: translateY(10px) scale(.94); } }
-    @media (max-width: 599.98px) { .chip--sign, .chip--rating { right: 0; } }
+    @media (max-width: 599.98px) { .chip--sign, .chip--rating { right: 0; } .photo--front { left: 2%; width: 38%; } }
 
     /* =========================================================
        SOCIAL PROOF
@@ -612,6 +612,23 @@
     .t-book p { color: oklch(0.95 0.02 30); }
     .t-book .tile__tag { background: var(--black); }
     .t-book .btn { margin-top: auto; align-self: flex-start; }
+
+    /* =========================================================
+       THE WORK (photo gallery)
+       ========================================================= */
+    .gallery { display: grid; gap: 16px; grid-template-columns: repeat(2, 1fr); }
+    @media (min-width: 900px) { .gallery { grid-template-columns: repeat(4, 1fr); gap: 20px; } }
+    .shot { position: relative; margin: 0; overflow: hidden; border-radius: var(--radius); background: var(--black); aspect-ratio: 3 / 4; border: 2px solid var(--black); }
+    .shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
+    .shot:hover img { transform: scale(1.05); }
+    .shot figcaption {
+      position: absolute; inset: auto 0 0; padding: 48px 16px 14px;
+      background: linear-gradient(transparent, oklch(0 0 0 / .82));
+      color: var(--white); font: 600 .95rem/1.25 var(--font-sign); letter-spacing: .1em; text-transform: uppercase;
+    }
+    .shot figcaption small { display: block; margin-top: 4px; font: 500 .85rem/1.3 var(--font-body); letter-spacing: 0; text-transform: none; color: oklch(0.85 0.004 260); }
+    .shot--big { grid-column: 1 / -1; aspect-ratio: 4 / 3; border-top: 10px solid var(--red); }
+    @media (min-width: 900px) { .shot--big { grid-column: 1 / 3; grid-row: 1 / 3; aspect-ratio: auto; } }
 
     /* =========================================================
        HOW IT WORKS
@@ -864,7 +881,7 @@
       <nav class="nav" id="menu" aria-label="Main">
         <ul>
           <li><a href="#services">Services</a></li>
-          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#work">The work</a></li>
           <li><a href="#reviews">Reviews</a></li>
           <li><a href="#visit">Visit</a></li>
           <li><a href="#faq">FAQ</a></li>
@@ -930,10 +947,10 @@
         <div class="stage" data-tilt>
           <div class="stage__inner">
             <figure class="photo photo--interior">
-              <img src="img/interior.jpg" width="1200" height="1600" alt="Inside De Leon Barbershop: white barber chairs, a black leather couch and a chalk-style &quot;Hair cut and shaves&quot; sign on the wall" fetchpriority="high">
+              <img src="img/barber-at-work.jpg" width="1100" height="1375" alt="A De Leon barber, smiling, running clippers along a client's neckline" fetchpriority="high">
             </figure>
             <figure class="photo photo--front">
-              <img src="img/storefront.jpg" width="442" height="628" alt="De Leon Barbershop storefront on Mission St: black facade, red trim and the painted De Leon emblem">
+              <img src="img/storefront.jpg" width="1050" height="1400" alt="De Leon Barbershop storefront on Mission St: black facade, red trim and the painted De Leon emblem">
               <figcaption>2138 Mission St</figcaption>
             </figure>
 
@@ -1168,6 +1185,44 @@
     </section>
 
     <!-- =====================================================
+         THE WORK (real photos from the shop)
+         ===================================================== -->
+    <section class="section" id="work" aria-labelledby="work-title" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">The work</p>
+            <h2 class="h2" id="work-title">Fresh out of the chair.</h2>
+          </div>
+          <p class="lead">Real cuts, real clients, right here on Mission St. No stock photos.</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="shot shot--big reveal">
+            <img src="img/interior.jpg" width="1200" height="1600" loading="lazy" alt="Inside De Leon Barbershop: white barber chairs, a black leather couch and a chalk-style &quot;Hair cut and shaves&quot; sign on a black wall">
+            <figcaption>The shop<small>Clean chairs, a comfy couch, and a wall that says it all.</small></figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <img src="img/cut-skin-fade.jpg" width="900" height="1200" loading="lazy" alt="Side view of a client with a high skin fade and a textured top">
+            <figcaption>Skin fade<small>Textured top, clean blend</small></figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <img src="img/cut-low-taper.jpg" width="720" height="1280" loading="lazy" alt="Smiling client with a low taper and a side-swept top">
+            <figcaption>Low taper<small>Side-swept, sharp edges</small></figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <img src="img/cut-taper-gray.jpg" width="900" height="1200" loading="lazy" alt="Side view of a client with salt-and-pepper hair cut into a clean taper">
+            <figcaption>Classic taper<small>Salt &amp; pepper, kept tidy</small></figcaption>
+          </figure>
+          <figure class="shot reveal">
+            <img src="img/interior-front.jpg" width="900" height="1200" loading="lazy" alt="View through the shop toward the front door and window, past the barber chairs and stations">
+            <figcaption>Up front<small>Natural light, steps from Mission St</small></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
          HOW IT WORKS
          ===================================================== -->
     <section class="section" id="how-it-works" aria-labelledby="how-title" style="padding-top:0">
@@ -1333,7 +1388,7 @@
 
         <div class="visit__media reveal">
           <figure class="storefront">
-            <img src="img/storefront.jpg" width="442" height="628" loading="lazy" alt="De Leon Barbershop storefront: black facade with red trim, a white &quot;Barbershop&quot; sign and &quot;Hair cuts &amp; shaves&quot; painted below the window">
+            <img src="img/storefront.jpg" width="1050" height="1400" loading="lazy" alt="De Leon Barbershop storefront: black facade with red trim, a white &quot;Barbershop&quot; sign and &quot;Hair cuts &amp; shaves&quot; painted below the window">
             <figcaption>Black facade · red trim · "Barbershop" sign</figcaption>
           </figure>
         <div class="map">
@@ -1481,6 +1536,7 @@
           <h2>Explore</h2>
           <ul>
             <li><a href="#services">Services</a></li>
+            <li><a href="#work">The work</a></li>
             <li><a href="#how-it-works">How it works</a></li>
             <li><a href="#reviews">Reviews</a></li>
             <li><a href="#faq">FAQ</a></li>
