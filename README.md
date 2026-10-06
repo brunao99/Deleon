@@ -1,1 +1,14 @@
-# Eletrocoreu
+# De Leon Barbershop — landing page
+
+Single-file landing page (`index.html`, no build step) for De Leon Barbershop, 2138 Mission St, San Francisco, CA 94110.
+
+Open `index.html` in a browser, or serve the folder with any static host.
+
+## Before publishing
+
+- Confirm opening hours and walk-in policy with the shop (marked `TODO` in `index.html`).
+- Add service prices and durations if the shop wants them listed.
+- Add a 1200x630 social image and fill `og:image` / `twitter:image`.
+- Optionally paste 3 real Google reviews (with permission) into the commented testimonials block.
+
+The phone number used by every call button is set once in the `PHONE` constant at the bottom of `index.html`.
